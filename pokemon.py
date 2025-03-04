@@ -12,6 +12,24 @@ pokemon = {"venusaur":
            "blastoise":
            {"type":{"type1":"water", "type2":"none"}},
 
+           "butterfree":
+           {"type":{"type1":"bug", "type2":"flying"}},
+
+           "beedrill":
+           {"type":{"type1":"bug", "type2":"poison"}},
+
+           "pigeot":
+           {"type":{"type1":"normal", "type2":"flying"}},
+
+           "raticate":
+           {"type":{"type1":"normal", "type2":"none"}},
+
+           "nidoqueen":
+           {"type":{"type1":"ground", "type2":"poison"}}, 
+
+           "nidoking":
+           {"type":{"type1":"ground", "type2":"poison"}},  
+
            "clefable":
            {"type":{"type1":"fairy", "type2":"none"}},
 
