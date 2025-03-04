@@ -13,35 +13,35 @@ pokemon = {"venusaur":
            {"type":{"type1":"water", "type2":"none"}},
 
            "clefable":
-           {"type":0},
+           {"type":{"type1":"fairy", "type2":"none"}},
 
            "ditto":
-           {"type":0},
+           {"type":{"type1":"normal", "type2":"none"}},
 
            "jolteon":
-           {"type":0},
+           {"type":{"type1":"electric", "type2":"none"}},
 
            "flareon":
-           {"type":0},
+           {"type":{"type1":"fire", "type2":"none"}},
 
            "porygon":
-           {"type":0},
+           {"type":{"type1":"normal", "type2":"none"}},
 
            "snorlax":
-           {"type":0},
+           {"type":{"type1":"normal", "type2":"none"}},
 
            "articuno":
-           {"type":0},
+           {"type":{"type1":"ice", "type2":"flying"}},
 
            "zapdos":
-           {"type":0},
+           {"type":{"type1":"electric", "type2":"flying"}},
 
            "moltres":
-           {"type":0},
+           {"type":{"type1":"fire", "type2":"flying"}},
 
            "dragonite":
-           {"type":0},
+           {"type":{"type1":"dragon", "type2":"flying"}},
 
            "mewtwo":
-           {"type":0}
+           {"type":{"type1":"psychic", "type2":"none"}}
            }
