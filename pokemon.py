@@ -3,7 +3,7 @@
 # by going like x[key], and then it'll retrieve the value of the key
 # keys can have identical values but values cannot have identical keys
 # vvv you can also nest them like so vvv
-pokemon = {"pnis":
+pokemon = {"venasaur":
            {"type":{"type1":"grass", "type2":"poison"}},
 
            "charizard":
