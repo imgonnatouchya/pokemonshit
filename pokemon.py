@@ -3,7 +3,9 @@
 # by going like x[key], and then it'll retrieve the value of the key
 # keys can have identical values but values cannot have identical keys
 # vvv you can also nest them like so vvv
+import random
 pokemon = {"venasaur":
+           
            {"type":{"type1":"grass", "type2":"poison"}},
 
            "charizard":
@@ -63,3 +65,16 @@ pokemon = {"venasaur":
            "mewtwo":
            {"type":{"type1":"psychic", "type2":"none"}}
            }
+
+t1mon1 = random.choice(list(pokemon.items()))
+print(t1mon1)  
+t1mon2 = random.choice(list(pokemon.items()))
+print(t1mon2)  
+t1mon3 = random.choice(list(pokemon.items()))
+print(t1mon3)  
+t1mon4 = random.choice(list(pokemon.items()))
+print(t1mon4)  
+t1mon5 = random.choice(list(pokemon.items()))
+print(t1mon5)  
+t1mon6 = random.choice(list(pokemon.items()))
+print(t1mon6)  
