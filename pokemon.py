@@ -64,6 +64,7 @@ pokemon = {"venasaur":
 
            "mewtwo":
            {"type":{"type1":"psychic", "type2":"none"}}
+           
            }
 
 t1mon1 = random.choice(list(pokemon.items()))
@@ -78,3 +79,33 @@ t1mon5 = random.choice(list(pokemon.items()))
 print(t1mon5)  
 t1mon6 = random.choice(list(pokemon.items()))
 print(t1mon6)  
+active = str(t1mon1)
+active_hp = 0
+active_atk = 0
+active_def = 0
+active_spak = 0
+active_spde = 0
+active_sped =0
+print(active_hp, active_atk, active_def, active_spak, active_spde, active_sped)
+#need to change the placeholder thingy to a specific pokemon that will adjust the stats and other attributes 
+print(active)
+
+pokemon_keys = list(pokemon.keys())
+active = pokemon_keys[1]
+if active == pokemon_keys[1]:
+    active_hp = 80
+    active_atk = 82
+    active_def = 83
+    active_spak = 100
+    active_spde = 100
+    active_sped =80
+    
+
+
+pokemon_keys = list(pokemon.keys())
+#print the list of the keys
+print(pokemon_keys)
+#print certain key
+print(pokemon_keys[5])
+#print certain key value
+print(pokemon[pokemon_keys[5]])
