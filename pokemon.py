@@ -4,7 +4,7 @@
 # keys can have identical values but values cannot have identical keys
 # vvv you can also nest them like so vvv
 import random
-pokemon = {"venasaur":
+pokemon = {"venusaur":
            
            {"type":{"type1":"grass", "type2":"poison"}},
 
@@ -66,8 +66,7 @@ pokemon = {"venasaur":
            {"type":{"type1":"psychic", "type2":"none"}}
            
            }
-moves = {"sludge bomb":
-         {"dmgtype":{}}}
+
 t1mon1 = random.choice(list(pokemon.items()))
 print(t1mon1)  
 t1mon2 = random.choice(list(pokemon.items()))
@@ -89,7 +88,19 @@ active_spde = 0
 active_sped = 0
 active_type1 = "none"
 active_type2 = "none"
-print(active_hp, active_atk, active_def, active_spak, active_spde, active_sped)
+active_move1 = "none"
+active_move2 = "none"
+active_move3 = "none"
+active_move4 = "none"
+active_hp_evs = 0
+active_atk_evs = 0
+active_def_evs = 0
+active_spa_evs = 0
+active_spd_evs = 0
+active_spe_evs = 0
+natures = ["adamant", "modest", "timid", "jolly", "bold", "calm", "brave", "serious"]
+active_nature = natures[7]
+
 print(active)
 pokemon_keys = list(pokemon.keys())
 active = pokemon_keys[1]
@@ -102,8 +113,22 @@ if active == pokemon_keys[1]:
     active_sped =80
     active_type1 = "grass"
     active_type2 = "poison"
-    print(active_type1, active_type2 )
-
+    active_move1 = "sludge bomb"
+    active_move2 = "leaf storm"
+    active_move3 = "poison powder"
+    active_move4 = "protect"
+    active_hp_evs = 4
+    active_atk_evs = 0
+    active_def_evs = 0
+    active_spa_evs = 252
+    active_spd_evs = 0
+    active_spe_evs = 252
+    active_nature = natures[1]
+#Hp calculator
+if active_hp_evs != 0:
+    print(((31+2*active_hp+(active_hp_evs/4)+100)*50/100)+10)
+else:
+    print("beep")
 
 #print the list of the keys
 print(pokemon_keys)
