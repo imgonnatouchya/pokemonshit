@@ -171,13 +171,23 @@ if active_hp_evs != 0:
     print("hp is, ", (math.floor(((2*active_hp+31+(active_hp_evs/4))*50)/100)+50+10))
 else:
     print("parker likes dudes")
-if active_atk_evs != 0:
+#stat claculator
+
+if active_atk_evs != 256:
     print("atk is,", ((((2*active_atk+31+(active_atk_evs/4)*50)/100)+5)*nature_boost_atk))
 else:
     print("parker likes dudes")
 
-if active_spa_evs != 0:
+if active_spa_evs != 256:
     print("spak is,", math.floor((math.floor(((2*active_spa+31+math.floor(active_spa_evs/4))*50)/100)+5)*nature_boost_spa) )
+else:
+    print("parker likes dudes")
+if active_def_evs != 256:
+    print("def is,", math.floor((math.floor(((2*active_def+31+math.floor(active_def_evs/4))*50)/100)+5)*nature_boost_def) )
+else:
+    print("parker likes dudes")
+if active_spd_evs != 256:
+    print("spak is,", math.floor((math.floor(((2*active_spd+31+math.floor(active_spd_evs/4))*50)/100)+5)*nature_boost_spd) )
 else:
     print("parker likes dudes")
 #print the list of the keys
