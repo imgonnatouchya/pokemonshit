@@ -180,8 +180,8 @@ if active_hp_evs != 0:
     print("hp is, ", (math.floor(((2*active_hp+31+(active_hp_evs/4))*50)/100)+50+10))
 else:
     print("parker likes dudes")
-#stat claculators
 
+#stat claculators
 if active_atk_evs != 256:
     print("atk is,", math.floor(math.floor((math.floor(((2*active_atk+31+math.floor(active_atk_evs/4))*50)/100)+5)*nature_boost_atk)*nature_drop_atk) )
 else:
