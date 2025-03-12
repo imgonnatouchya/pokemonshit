@@ -113,6 +113,12 @@ nature_boost_def = 1
 nature_boost_spa = 1
 nature_boost_spd = 1
 nature_boost_spe = 1
+nature_drop_atk = 1
+nature_drop_def = 1
+nature_drop_spa = 1
+nature_drop_spd = 1
+nature_drop_spe = 1
+
 
 print(active)
 pokemon_keys = list(pokemon.keys())
@@ -122,8 +128,8 @@ if active == pokemon_keys[1]:
     active_atk = 82
     active_def = 83
     active_spa = 100
-    active_spde = 100
-    active_sped =80
+    active_spd = 100
+    active_spe =80
     active_type1 = "grass"
     active_type2 = "poison"
     active_move1 = "sludge bomb"
@@ -139,30 +145,33 @@ if active == pokemon_keys[1]:
     active_nature = "modest"
 
 
-if active_nature == "adamant" or "brave":
+if active_nature == "adamant":
     nature_boost_atk = 1.10
-else:
-    nature_boost_atk = 1
+    nature_drop_spa = 0.90
+
+if active_nature == "brave":
+    nature_boost_atk = 1.10
+    nature_drop_spe = 0.90
 
 if active_nature == "bold":
     nature_boost_def = 1.10
-else:
-    nature_boost_def = 1
+    nature_drop_atk = 0.90
 
 if active_nature == "modest":
     nature_boost_spa = 1.10
-else:
-    nature_boost_spa = 1
+    nature_drop_atk = 0.90
 
 if active_nature == "calm":
     nature_boost_spd = 1.10
-else:
-    nature_boost_spd = 1
+    nature_drop_atk = 0.90
 
-if active_nature == "jolly" or "timid":
+if active_nature == "jolly":
     nature_boost_spe = 1.10
-else:
-    nature_boost_spe = 1
+    nature_drop_spa = 0.90
+
+if active_nature == "timid":
+    nature_boost_spe = 1.10
+    nature_drop_atk = 0.90
 
 
 
@@ -171,10 +180,10 @@ if active_hp_evs != 0:
     print("hp is, ", (math.floor(((2*active_hp+31+(active_hp_evs/4))*50)/100)+50+10))
 else:
     print("parker likes dudes")
-#stat claculator
+#stat claculators
 
 if active_atk_evs != 256:
-    print("atk is,", ((((2*active_atk+31+(active_atk_evs/4)*50)/100)+5)*nature_boost_atk))
+    print("atk is,", math.floor(math.floor((math.floor(((2*active_atk+31+math.floor(active_atk_evs/4))*50)/100)+5)*nature_boost_atk)*nature_drop_atk) )
 else:
     print("parker likes dudes")
 
@@ -182,14 +191,23 @@ if active_spa_evs != 256:
     print("spak is,", math.floor((math.floor(((2*active_spa+31+math.floor(active_spa_evs/4))*50)/100)+5)*nature_boost_spa) )
 else:
     print("parker likes dudes")
+
 if active_def_evs != 256:
     print("def is,", math.floor((math.floor(((2*active_def+31+math.floor(active_def_evs/4))*50)/100)+5)*nature_boost_def) )
 else:
     print("parker likes dudes")
+
 if active_spd_evs != 256:
-    print("spak is,", math.floor((math.floor(((2*active_spd+31+math.floor(active_spd_evs/4))*50)/100)+5)*nature_boost_spd) )
+    print("spdef is,", math.floor((math.floor(((2*active_spd+31+math.floor(active_spd_evs/4))*50)/100)+5)*nature_boost_spd) )
 else:
     print("parker likes dudes")
+
+if active_spe_evs != 256:
+    print("speed is,", math.floor((math.floor(((2*active_spe+31+math.floor(active_spe_evs/4))*50)/100)+5)*nature_boost_spe) )
+else:
+    print("parker likes dudes")
+
+
 #print the list of the keys
 print(pokemon_keys)
 #print certain key
