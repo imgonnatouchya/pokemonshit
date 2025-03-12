@@ -68,24 +68,18 @@ pokemon = {"venusaur":
            }
 
 t1mon1 = random.choice(list(pokemon.items()))
-print(t1mon1)  
 t1mon2 = random.choice(list(pokemon.items()))
-print(t1mon2)  
 t1mon3 = random.choice(list(pokemon.items()))
-print(t1mon3)  
 t1mon4 = random.choice(list(pokemon.items()))
-print(t1mon4)  
 t1mon5 = random.choice(list(pokemon.items()))
-print(t1mon5)  
 t1mon6 = random.choice(list(pokemon.items()))
-print(t1mon6)  
 active = str(t1mon1)
 active_hp = 0
 active_atk = 0
 active_def = 0
-active_spak = 0
-active_spde = 0
-active_sped = 0
+active_spa = 0
+active_spd = 0
+active_spe = 0
 active_type1 = "none"
 active_type2 = "none"
 active_move1 = "none"
@@ -108,7 +102,7 @@ if active == pokemon_keys[1]:
     active_hp = 80
     active_atk = 82
     active_def = 83
-    active_spak = 100
+    active_spa = 100
     active_spde = 100
     active_sped =80
     active_type1 = "grass"
@@ -124,12 +118,39 @@ if active == pokemon_keys[1]:
     active_spd_evs = 0
     active_spe_evs = 252
     active_nature = natures[1]
+nature_boost_atk = 1
+nature_boost_def = 1
+nature_boost_spa = 1
+nature_boost_spd = 1
+nature_boost_spe = 1
+
+if active_nature == natures[0] or natures[6]:
+    nature_boost_atk = 1.10
+elif active_nature == natures[4]:
+    nature_boost_def = 1.10
+elif active_nature == natures[1]:
+    nature_boost_spa = 1.10
+elif active_nature == natures[5]:
+    nature_boost_spd = 1.10
+elif active_nature == natures[2] or natures[3]:
+    nature_boost_spe = 1.10
+
+
+
+
 #Hp calculator
 if active_hp_evs != 0:
-    print(((31+2*active_hp+(active_hp_evs/4)+100)*50/100)+10)
+    print("hp is, ", ((31+2*active_hp+(active_hp_evs/4)+100)*50/100)+10)
 else:
-    print("beep")
-
+    print("parker likes dudes")
+if active_atk_evs != 0:
+    print("atk is,", ((31+2*active_atk+(active_atk_evs/4)*50/100+5)* nature_boost_atk))
+else:
+    print("parker likes dudes")
+if active_spa_evs != 0:
+    print("spak is,", ((31+2*active_spa+(active_spa_evs/4)*50/100+5)* nature_boost_spa))
+else:
+    print("parker likes dudes")
 #print the list of the keys
 print(pokemon_keys)
 #print certain key
