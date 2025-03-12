@@ -136,20 +136,33 @@ if active == pokemon_keys[1]:
     active_spa_evs = 252
     active_spd_evs = 0
     active_spe_evs = 252
-    active_nature = natures[1]
+    active_nature = "modest"
 
 
-if active_nature == natures[0] or natures[6]:
+if active_nature == "adamant" or "brave":
     nature_boost_atk = 1.10
-elif active_nature == natures[4]:
-    nature_boost_def = 1.10
-elif active_nature == natures[1]:
-    nature_boost_spa = 1.10
-elif active_nature == natures[5]:
-    nature_boost_spd = 1.10
-elif active_nature == natures[2] or natures[3]:
-    nature_boost_spe = 1.10
+else:
+    nature_boost_atk = 1
 
+if active_nature == "bold":
+    nature_boost_def = 1.10
+else:
+    nature_boost_def = 1
+
+if active_nature == "modest":
+    nature_boost_spa = 1.10
+else:
+    nature_boost_spa = 1
+
+if active_nature == "calm":
+    nature_boost_spd = 1.10
+else:
+    nature_boost_spd = 1
+
+if active_nature == "jolly" or "timid":
+    nature_boost_spe = 1.10
+else:
+    nature_boost_spe = 1
 
 
 
@@ -164,7 +177,7 @@ else:
     print("parker likes dudes")
 
 if active_spa_evs != 0:
-    print("spak is,", math.floor((((2*active_spa+31+(active_spa_evs/4))*50)/100)+5)*nature_boost_spa))
+    print("spak is,", math.floor((math.floor(((2*active_spa+31+math.floor(active_spa_evs/4))*50)/100)+5)*nature_boost_spa) )
 else:
     print("parker likes dudes")
 #print the list of the keys
