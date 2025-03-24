@@ -82,20 +82,24 @@ pokemon = {"venusaur":
            }
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
 pokemon_keys = list(pokemon.keys())
-
+#assign team 1
 t1mon1 = random.choice(pokemon_keys)
-
 t1mon2 = random.choice(pokemon_keys)
-
 t1mon3 = random.choice(pokemon_keys)
-
 t1mon4 = random.choice(pokemon_keys)
-
 t1mon5 = random.choice(pokemon_keys)
-
 t1mon6 = random.choice(pokemon_keys)
+#assign team 2
+t2mon1 = random.choice(pokemon_keys)
+t2mon2 = random.choice(pokemon_keys)
+t2mon3 = random.choice(pokemon_keys)
+t2mon4 = random.choice(pokemon_keys)
+t2mon5 = random.choice(pokemon_keys)
+t2mon6 = random.choice(pokemon_keys)
 
 active = str(t1mon1)
+active2 = str(t2mon1)
+
 #base stats
 active_hp = 0
 active_atk = 0
@@ -132,9 +136,44 @@ nature_drop_spa = 1
 nature_drop_spd = 1
 nature_drop_spe = 1
 
+#stats for team 2
+#base stats
+active2_hp = 0
+active2_atk = 0
+active2_def = 0
+active2_spa = 0
+active2_spd = 0
+active2_spe = 0
+#type
+active2_type1 = "none"
+active2_type2 = "none"
+#moves
+active2_move1 = "none"
+active2_move2 = "none"
+active2_move3 = "none"
+active2_move4 = "none"
+#ev's
+active2_hp_evs = 0
+active2_atk_evs = 0
+active2_def_evs = 0
+active2_spa_evs = 0
+active2_spd_evs = 0
+active2_spe_evs = 0
+
+active2_nature = natures[7]
+nature_boost_atk2 = 1
+nature_boost_def2 = 1
+nature_boost_spa2 = 1
+nature_boost_spd2 = 1
+nature_boost_spe2 = 1
+nature_drop_atk2 = 1
+nature_drop_def2 = 1
+nature_drop_spa2 = 1
+nature_drop_spd2 = 1
+nature_drop_spe2 = 1
 
 print(active)
-
+print(active2)
 
 if active == pokemon_keys[0]:
     active_hp = 80
@@ -549,12 +588,12 @@ if active == pokemon_keys[19]:
     active_move3 = "substitute"
     active_move4 = "haze"
     active_hp_evs = 248
-    active_atk_evs = 208
+    active_atk_evs = 0
     active_def_evs = 0
-    active_spa_evs = 0
+    active_spa_evs = 208
     active_spd_evs = 0
     active_spe_evs = 52
-    active_nature = "calm"
+    active_nature = "modest"
 
 if active == pokemon_keys[20]:
     active_hp = 90
