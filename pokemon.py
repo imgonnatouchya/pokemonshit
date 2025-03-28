@@ -1321,7 +1321,37 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 #got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
 #will play out, change values and then repeat the code.
 
-
+starting_turn = input("Player 1 will you Fight switch or Concede")
+while starting_turn != "fight" or "Fight" or "Switch" or "switch" or "concede":
+    starting_turn = input("Player 1 will you Fight switch or Concede")
+if starting_turn == "fight" or "Fight":
+    start1_fight = input("Pick,", active_move1, active_move2, active_move3, active_move4)
+    if start1_fight == active_move1:
+        start_move = active_move1
+    if start1_fight == active_move2:
+        start_move = active_move2
+    if start1_fight == active_move3:
+        start_move = active_move3
+    if start1_fight == active_move4:
+        start_move = active_move4
+if starting_turn == "switch" or "Switch":
+    start1_switch = input("Pick, ", t1mon2, ",", t1mon3, ",", t1mon4, ",", t1mon5, ",", t1mon6)
+    if start1_switch == t1mon2:
+        start_move = "swap2"
+    if start1_switch == t1mon3:
+        start_move = "swap3"
+    if start1_switch == t1mon4:
+        start_move = "swap4"
+    if start1_switch == t1mon5:
+        start_move = "swap5"
+    if start1_switch == t1mon6:
+        start_move = "swap6"
+if starting_turn == "concede":
+    print("player 2 wins ")
+    
+check = input("Player 2 ready?")
+while check != "yes" or "Yes":
+    check = input("Player 2 ready?")
 
 
 
