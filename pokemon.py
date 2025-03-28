@@ -172,8 +172,7 @@ nature_drop_spa2 = 1
 nature_drop_spd2 = 1
 nature_drop_spe2 = 1
 
-print(active)
-print(active2)
+
 
 if active == pokemon_keys[0]:
     active_hp = 80
@@ -1242,33 +1241,33 @@ if active2_nature == "timid":
 
 #Hp calculator
 if active_hp_evs != 256:
-    print("hp is, ", (math.floor(((2*active_hp+31+(active_hp_evs/4))*50)/100)+50+10))
+    active_hp_stat = (math.floor(((2*active_hp+31+(active_hp_evs/4))*50)/100)+50+10)
 else:
     print("parker likes dudes")
 
 #stat calculators
 if active_atk_evs != 256:
-    print("atk is,", math.floor(math.floor((math.floor(((2*active_atk+31+math.floor(active_atk_evs/4))*50)/100)+5)*nature_boost_atk)*nature_drop_atk) )
+    active_atk_stats = math.floor(math.floor((math.floor(((2*active_atk+31+math.floor(active_atk_evs/4))*50)/100)+5)*nature_boost_atk)*nature_drop_atk) 
 else:
     print("parker likes dudes")
 
 if active_spa_evs != 256:
-    print("spak is,", math.floor((math.floor(((2*active_spa+31+math.floor(active_spa_evs/4))*50)/100)+5)*nature_boost_spa) )
+    active_spa_stats = math.floor((math.floor(((2*active_spa+31+math.floor(active_spa_evs/4))*50)/100)+5)*nature_boost_spa)
 else:
     print("parker likes dudes")
 
 if active_def_evs != 256:
-    print("def is,", math.floor((math.floor(((2*active_def+31+math.floor(active_def_evs/4))*50)/100)+5)*nature_boost_def) )
+    active_def_stats = math.floor((math.floor(((2*active_def+31+math.floor(active_def_evs/4))*50)/100)+5)*nature_boost_def) 
 else:
     print("parker likes dudes")
 
 if active_spd_evs != 256:
-    print("spdef is,", math.floor((math.floor(((2*active_spd+31+math.floor(active_spd_evs/4))*50)/100)+5)*nature_boost_spd) )
+    active_spd_stats = math.floor((math.floor(((2*active_spd+31+math.floor(active_spd_evs/4))*50)/100)+5)*nature_boost_spd) 
 else:
     print("parker likes dudes")
 
 if active_spe_evs != 256:
-    print("speed is,", math.floor((math.floor(((2*active_spe+31+math.floor(active_spe_evs/4))*50)/100)+5)*nature_boost_spe) )
+    active_spe_stats = math.floor((math.floor(((2*active_spe+31+math.floor(active_spe_evs/4))*50)/100)+5)*nature_boost_spe) 
 else:
     print("parker likes dudes")
 
@@ -1276,51 +1275,51 @@ else:
 
 #team 2 stats
 if active2_hp_evs != 256:
-    print("hp2 is, ", (math.floor(((2*active2_hp+31+(active2_hp_evs/4))*50)/100)+50+10))
+    active2_hp_stats = (math.floor(((2*active2_hp+31+(active2_hp_evs/4))*50)/100)+50+10)
 else:
     print("parker likes dudes")
 
 #stat calculators
 if active2_atk_evs != 256:
-    print("atk2 is,", math.floor(math.floor((math.floor(((2*active2_atk+31+math.floor(active2_atk_evs/4))*50)/100)+5)*nature_boost_atk2)*nature_drop_atk2) )
+    active2_atk_stats = math.floor(math.floor((math.floor(((2*active2_atk+31+math.floor(active2_atk_evs/4))*50)/100)+5)*nature_boost_atk2)*nature_drop_atk2) 
 else:
     print("parker likes dudes")
 
 if active2_spa_evs != 256:
-    print("spak2 is,", math.floor((math.floor(((2*active2_spa+31+math.floor(active2_spa_evs/4))*50)/100)+5)*nature_boost_spa2) )
+    active2_spa_stats = math.floor((math.floor(((2*active2_spa+31+math.floor(active2_spa_evs/4))*50)/100)+5)*nature_boost_spa2) 
 else:
     print("parker likes dudes")
 
 if active2_def_evs != 256:
-    print("def2 is,", math.floor((math.floor(((2*active2_def+31+math.floor(active2_def_evs/4))*50)/100)+5)*nature_boost_def2) )
+    active2_def_stats = math.floor((math.floor(((2*active2_def+31+math.floor(active2_def_evs/4))*50)/100)+5)*nature_boost_def2) 
 else:
     print("parker likes dudes")
 
 if active2_spd_evs != 256:
-    print("spdef2 is,", math.floor((math.floor(((2*active2_spd+31+math.floor(active2_spd_evs/4))*50)/100)+5)*nature_boost_spd2) )
+    active2_spd_stats = math.floor((math.floor(((2*active2_spd+31+math.floor(active2_spd_evs/4))*50)/100)+5)*nature_boost_spd2) 
 else:
     print("parker likes dudes")
 
 if active2_spe_evs != 256:
-    print("speed2 is,", math.floor((math.floor(((2*active2_spe+31+math.floor(active2_spe_evs/4))*50)/100)+5)*nature_boost_spe2) )
+    active2_spe_stats = math.floor((math.floor(((2*active2_spe+31+math.floor(active2_spe_evs/4))*50)/100)+5)*nature_boost_spe2) 
 else:
     print("parker likes dudes")
 
 
-print(active)
-print(active_type1)
-print(active_type2)
-print(active_move1)
-print(active_move2)
-print(active_move3)
-print(active_move4)
-print(active2)
-print(active2_type1)
-print(active2_type2)
-print(active2_move1)
-print(active2_move2)
-print(active2_move3)
-print(active2_move4)
+t1_points= 0
+t2_points=0
+#actual fight 
+print("Battle Start")
+print("Player 1 sent out,", active, ",", active_type1, ",", active_type2)
+print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
+
+#Here we need to make a code that will loop to have infinite turns until someone types concede,
+#or one side takes out all 6 pokemon. An input should be repeated, either fight, switch, or
+#concede. If either fight or switch are chosen it will either display your switches or your active
+#moves. After one input is done it should then ask another for player 2 which same rules apply.
+#Every time something is KO'd add 1 point to either t1_points or t2_points dpending on which team
+#got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
+#will play out, change values and then repeat the code.
 
 
 
@@ -1336,13 +1335,3 @@ print(active2_move4)
 
 
 
-
-
-
-
-#print the list of the keys
-print(pokemon_keys)
-#print certain key
-print(pokemon_keys[5])
-#print certain key value
-print(pokemon[pokemon_keys[5]])
