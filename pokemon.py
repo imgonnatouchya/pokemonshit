@@ -682,6 +682,513 @@ if active == pokemon_keys[23]:
 
 
 
+#team 2
+if active == pokemon_keys[0]:
+    active2_hp = 80
+    active2_atk = 82
+    active2_def = 83
+    active2_spa = 100
+    active2_spd = 100
+    active2_spe =80
+    active2_type1 = "grass"
+    active2_type2 = "poison"
+    active2_move1 = "sludge bomb"
+    active2_move2 = "leaf storm"
+    active2_move3 = "poison powder"
+    active2_move4 = "protect"
+    active2_hp_evs = 4
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 252
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "modest"
+
+if active2 == pokemon_keys[1]:
+    active2_hp = 78
+    active2_atk = 84
+    active2_def = 78
+    active2_spa = 109
+    active2_spd = 85
+    active2_spe = 100
+    active2_type1 = "fire"
+    active2_type2 = "flying"
+    active2_move1 = "blast burn"
+    active2_move2 = "heat wave"
+    active2_move3 = "air slash"
+    active2_move4 = "scorching sands "
+    active2_hp_evs = 4
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 252
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "modest"
+
+if active2 == pokemon_keys[2]:
+    active2_hp = 79
+    active2_atk = 83
+    active2_def = 100
+    active2_spa = 85
+    active2_spd = 105
+    active2_spe =78
+    active2_type1 = "water"
+    active2_type2 = "none"
+    active2_move1 = "water pledge"
+    active2_move2 = "shell smash"
+    active2_move3 = "flash cannon"
+    active2_move4 = "water spout"
+    active2_hp_evs = 4
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 252
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "modest"
+
+if active2 == pokemon_keys[3]:
+    active2_hp = 60
+    active2_atk = 45
+    active2_def = 50
+    active2_spa = 90
+    active2_spd = 80
+    active2_spe = 70
+    active2_type1 = "bug"
+    active2_type2 = "flying"
+    active2_move1 = "substitute"
+    active2_move2 = "bug buzz"
+    active2_move3 = "quiver dance"
+    active2_move4 = "sleep powder"
+    active2_hp_evs = 252
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[4]:
+    active2_hp = 65
+    active2_atk = 90
+    active2_def = 40
+    active2_spa = 45
+    active2_spd = 80
+    active2_spe = 75
+    active2_type1 = "bug"
+    active2_type2 = "poison"
+    active2_move1 = "Knock off"
+    active2_move2 = "poison jab"
+    active2_move3 = "drill run"
+    active2_move4 = "u-turn"
+    active2_hp_evs = 0
+    active2_atk_evs = 252
+    active2_def_evs = 0
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "jolly"
+
+if active2 == pokemon_keys[5]:
+    active2_hp = 83
+    active2_atk = 80
+    active2_def = 75
+    active2_spa = 70
+    active2_spd = 70
+    active2_spe = 101
+    active2_type1 = "normal"
+    active2_type2 = "flying"
+    active2_move1 = "u-turn"
+    active2_move2 = "roost"
+    active2_move3 = "brave bird"
+    active2_move4 = "return"
+    active2_hp_evs = 0
+    active2_atk_evs = 252
+    active2_def_evs = 0
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "jolly"
+
+if active2 == pokemon_keys[6]:
+    active2_hp = 55
+    active2_atk = 81
+    active2_def = 60
+    active2_spa = 50
+    active2_spd = 70
+    active2_spe = 97
+    active2_type1 = "normal"
+    active2_type2 = "none"
+    active2_move1 = "facade"
+    active2_move2 = "sucker punch"
+    active2_move3 = "u-turn"
+    active2_move4 = "crunch"
+    active2_hp_evs = 0
+    active2_atk_evs = 252
+    active2_def_evs = 0
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "jolly"
+
+if active2 == pokemon_keys[7]:
+    active2_hp = 90
+    active2_atk = 92
+    active2_def = 87
+    active2_spa = 75
+    active2_spd = 85
+    active2_spe = 76
+    active2_type1 = "poison"
+    active2_type2 = "ground"
+    active2_move1 = "stealth rock"
+    active2_move2 = "earth power"
+    active2_move3 = "sludge wave"
+    active2_move4 = "toxic"
+    active2_hp_evs = 0
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 252
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[8]:
+    active2_hp = 81
+    active2_atk = 102
+    active2_def = 77
+    active2_spa = 85
+    active2_spd = 75
+    active2_spe = 85
+    active2_type1 = "poison"
+    active2_type2 = "ground"
+    active2_move1 = "sludge wave"
+    active2_move2 = "earth power"
+    active2_move3 = "ice beam"
+    active2_move4 = "substitute"
+    active2_hp_evs = 0
+    active2_atk_evs = 0
+    active2_def_evs = 4
+    active2_spa_evs = 252
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[9]:
+    active2_hp = 95
+    active2_atk = 70
+    active2_def = 73
+    active2_spa = 95
+    active2_spd = 90
+    active2_spe = 60
+    active2_type1 = "fairy"
+    active2_type2 = "none"
+    active2_move1 = "monnblast"
+    active2_move2 = "recover"
+    active2_move3 = "protect"
+    active2_move4 = "flamethrower"
+    active2_hp_evs = 252
+    active2_atk_evs = 0
+    active2_def_evs = 236
+    active2_spa_evs = 4
+    active2_spd_evs = 4
+    active2_spe_evs = 12
+    active2_nature = "bold"
+
+if active2 == pokemon_keys[10]:
+    active2_hp = 130
+    active2_atk = 85
+    active2_def = 80
+    active2_spa = 85
+    active2_spd = 95
+    active2_spe = 60
+    active2_type1 = "water"
+    active2_type2 = "ice"
+    active2_move1 = "scald"
+    active2_move2 = "freeze dry"
+    active2_move3 = "protect"
+    active2_move4 = "perish song"
+    active2_hp_evs = 252
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 4
+    active2_spd_evs = 252
+    active2_spe_evs = 0
+    active2_nature = "calm"
+
+if active2 == pokemon_keys[11]:
+    active2_hp = 130
+    active2_atk = 65
+    active2_def = 60
+    active2_spa = 110
+    active2_spd = 95
+    active2_spe = 65
+    active2_type1 = "water"
+    active2_type2 = "none"
+    active2_move1 = "scald"
+    active2_move2 = "haze"
+    active2_move3 = "wish"
+    active2_move4 = "protect"
+    active2_hp_evs = 252
+    active2_atk_evs = 0
+    active2_def_evs = 252
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 0
+    active2_nature = "bold"
+
+if active2 == pokemon_keys[12]:
+    active2_hp = 65
+    active2_atk = 65
+    active2_def = 60
+    active2_spa = 110
+    active2_spd = 95
+    active2_spe = 130
+    active2_type1 = "electric"
+    active2_type2 = "none"
+    active2_move1 = "calm mind"
+    active2_move2 = "thunderbolt"
+    active2_move3 = "volt switch"
+    active2_move4 = "alluring voice"
+    active2_hp_evs = 0
+    active2_atk_evs = 0
+    active2_def_evs = 4
+    active2_spa_evs = 252
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[13]:
+    active2_hp = 65
+    active2_atk = 130
+    active2_def = 60
+    active2_spa = 95
+    active2_spd = 110
+    active2_spe = 65
+    active2_type1 = "fire"
+    active2_type2 = "none"
+    active2_move1 = "flar blitz"
+    active2_move2 = "facade"
+    active2_move3 = "protect"
+    active2_move4 = "copycat"
+    active2_hp_evs = 252
+    active2_atk_evs = 252
+    active2_def_evs = 4
+    active2_spa_evs = 0
+    active2_spd_evs = 0
+    active2_spe_evs = 0
+    active2_nature = "adamant"
+
+if active2 == pokemon_keys[14]:
+    active2_hp = 65
+    active2_atk = 60
+    active2_def = 105
+    active2_spa = 85
+    active2_spd = 112.5
+    active2_spe = 40
+    active2_type1 = "normal"
+    active2_type2 = "none"
+    active2_move1 = "double edge"
+    active2_move2 = "ice beam"
+    active2_move3 = "recover"
+    active2_move4 = "agility"
+    active2_hp_evs = 252
+    active2_atk_evs = 128
+    active2_def_evs = 124
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 0
+    active2_nature = "brave"
+
+if active2 == pokemon_keys[15]:
+    active2_hp = 70
+    active2_atk = 60
+    active2_def = 125
+    active2_spa = 115
+    active2_spd = 70
+    active2_spe = 55
+    active2_type1 = "water"
+    active2_type2 = "rock"
+    active2_move1 = "shell smash"
+    active2_move2 = "hydro pump"
+    active2_move3 = "endure"
+    active2_move4 = "power gem"
+    active2_hp_evs = 0
+    active2_atk_evs = 0
+    active2_def_evs = 4
+    active2_spa_evs = 252
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[16]:
+    active2_hp = 60
+    active2_atk = 115
+    active2_def = 105
+    active2_spa = 65
+    active2_spd = 70
+    active2_spe = 80
+    active2_type1 = "water"
+    active2_type2 = "rock"
+    active2_move1 = "rapid spin"
+    active2_move2 = "knock off"
+    active2_move3 = "stone edge"
+    active2_move4 = "liquidation"
+    active2_hp_evs = 0
+    active2_atk_evs = 252
+    active2_def_evs = 4
+    active2_spa_evs = 0
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "adamant"
+
+if active2 == pokemon_keys[17]:
+    active2_hp = 80
+    active2_atk = 105
+    active2_def = 65
+    active2_spa = 60
+    active2_spd = 75
+    active2_spe = 130
+    active2_type1 = "rock"
+    active2_type2 = "flying"
+    active2_move1 = "roost"
+    active2_move2 = "stealth rock"
+    active2_move3 = "stone edge"
+    active2_move4 = "earthquake"
+    active2_hp_evs = 0
+    active2_atk_evs = 252
+    active2_def_evs = 4
+    active2_spa_evs = 0
+    active2_spd_evs = 0
+    active2_spe_evs = 252
+    active2_nature = "adamant"
+
+if active2 == pokemon_keys[18]:
+    active2_hp = 160
+    active2_atk = 110
+    active2_def = 65
+    active2_spa = 65
+    active2_spd = 110
+    active2_spe = 30
+    active2_type1 = "normal"
+    active2_type2 = "none"
+    active2_move1 = "yawn"
+    active2_move2 = "protect"
+    active2_move3 = "earthquake"
+    active2_move4 = "body slam"
+    active2_hp_evs = 140
+    active2_atk_evs = 116
+    active2_def_evs = 252
+    active2_spa_evs = 0
+    active2_spd_evs = 0
+    active2_spe_evs = 0
+    active2_nature = "adamant"
+
+if active2 == pokemon_keys[19]:
+    active2_hp = 90
+    active2_atk = 85
+    active2_def = 100
+    active2_spa = 95
+    active2_spd = 125
+    active2_spe = 85
+    active2_type1 = "ice"
+    active2_type2 = "flying"
+    active2_move1 = "freeze dry"
+    active2_move2 = "roost"
+    active2_move3 = "substitute"
+    active2_move4 = "haze"
+    active2_hp_evs = 248
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 208
+    active2_spd_evs = 0
+    active2_spe_evs = 52
+    active2_nature = "modest"
+
+if active2 == pokemon_keys[20]:
+    active2_hp = 90
+    active2_atk = 90
+    active2_def = 85
+    active2_spa = 125
+    active2_spd = 90
+    active2_spe = 100
+    active2_type1 = "electric"
+    active2_type2 = "flying"
+    active2_move1 = "hurricane"
+    active2_move2 = "volt switch"
+    active2_move3 = "thunder wave"
+    active2_move4 = "roost"
+    active2_hp_evs = 248
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 244
+    active2_spd_evs = 0
+    active2_spe_evs = 16
+    active2_nature = "timid"
+
+if active2 == pokemon_keys[21]:
+    active2_hp = 90
+    active2_atk = 100
+    active2_def = 90
+    active2_spa = 125
+    active2_spd = 85
+    active2_spe = 90
+    active2_type1 = "fire"
+    active2_type2 = "flying"
+    active2_move1 = "flamethrower"
+    active2_move2 = "will-o-wisp"
+    active2_move3 = "air slash"
+    active2_move4 = "roost"
+    active2_hp_evs = 248
+    active2_atk_evs = 0
+    active2_def_evs = 248
+    active2_spa_evs = 0
+    active2_spd_evs = 0
+    active2_spe_evs = 12
+    active2_nature = "bold"
+
+if active2 == pokemon_keys[22]:
+    active2_hp = 91
+    active2_atk = 134
+    active2_def = 95
+    active2_spa = 100
+    active2_spd = 100
+    active2_spe = 80
+    active2_type1 = "dragon"
+    active2_type2 = "flying"
+    active2_move1 = "outrage "
+    active2_move2 = "extreme speed"
+    active2_move3 = "stomping tantrum"
+    active2_move4 = "aerial ace"
+    active2_hp_evs = 244
+    active2_atk_evs = 252
+    active2_def_evs = 4
+    active2_spa_evs = 0
+    active2_spd_evs = 4
+    active2_spe_evs = 4
+    active2_nature = "adamant"
+
+if active2 == pokemon_keys[23]:
+    active2_hp = 106
+    active2_atk = 110
+    active2_def = 90
+    active2_spa = 154
+    active2_spd = 90
+    active2_spe = 130
+    active2_type1 = "psychic"
+    active2_type2 = "none"
+    active2_move1 = "nasty plot"
+    active2_move2 = "psystrike"
+    active2_move3 = "thunderbolt"
+    active2_move4 = "ice beam"
+    active2_hp_evs = 0
+    active2_atk_evs = 0
+    active2_def_evs = 0
+    active2_spa_evs = 252
+    active2_spd_evs = 4
+    active2_spe_evs = 252
+    active2_nature = "timid"
+
+
+
 if active_nature == "adamant":
     nature_boost_atk = 1.10
     nature_drop_spa = 0.90
@@ -711,6 +1218,27 @@ if active_nature == "timid":
     nature_drop_atk = 0.90
 
 
+if active2_nature == "adamant":
+    nature_boost_atk2 = 1.10
+    nature_drop_spa2 = 0.90
+if active2_nature == "brave":
+    nature_boost_atk2 = 1.10
+    nature_drop_spe2 = 0.90
+if active2_nature == "bold":
+    nature_boost_def2 = 1.10
+    nature_drop_atk2 = 0.90
+if active2_nature == "modest":
+    nature_boost_spa2 = 1.10
+    nature_drop_atk2 = 0.90
+if active2_nature == "calm":
+    nature_boost_spd2 = 1.10
+    nature_drop_atk22 = 0.90
+if active2_nature == "jolly":
+    nature_boost_spe2 = 1.10
+    nature_drop_spa2 = 0.90
+if active2_nature == "timid":
+    nature_boost_spe2 = 1.10
+    nature_drop_atk2 = 0.90
 
 #Hp calculator
 if active_hp_evs != 256:
@@ -744,6 +1272,41 @@ if active_spe_evs != 256:
 else:
     print("parker likes dudes")
 
+
+
+#team 2 stats
+if active2_hp_evs != 256:
+    print("hp2 is, ", (math.floor(((2*active2_hp+31+(active2_hp_evs/4))*50)/100)+50+10))
+else:
+    print("parker likes dudes")
+
+#stat calculators
+if active2_atk_evs != 256:
+    print("atk2 is,", math.floor(math.floor((math.floor(((2*active2_atk+31+math.floor(active2_atk_evs/4))*50)/100)+5)*nature_boost_atk2)*nature_drop_atk2) )
+else:
+    print("parker likes dudes")
+
+if active2_spa_evs != 256:
+    print("spak2 is,", math.floor((math.floor(((2*active2_spa+31+math.floor(active2_spa_evs/4))*50)/100)+5)*nature_boost_spa2) )
+else:
+    print("parker likes dudes")
+
+if active2_def_evs != 256:
+    print("def2 is,", math.floor((math.floor(((2*active2_def+31+math.floor(active2_def_evs/4))*50)/100)+5)*nature_boost_def2) )
+else:
+    print("parker likes dudes")
+
+if active2_spd_evs != 256:
+    print("spdef2 is,", math.floor((math.floor(((2*active2_spd+31+math.floor(active2_spd_evs/4))*50)/100)+5)*nature_boost_spd2) )
+else:
+    print("parker likes dudes")
+
+if active2_spe_evs != 256:
+    print("speed2 is,", math.floor((math.floor(((2*active2_spe+31+math.floor(active2_spe_evs/4))*50)/100)+5)*nature_boost_spe2) )
+else:
+    print("parker likes dudes")
+
+
 print(active)
 print(active_type1)
 print(active_type2)
@@ -751,6 +1314,30 @@ print(active_move1)
 print(active_move2)
 print(active_move3)
 print(active_move4)
+print(active2)
+print(active2_type1)
+print(active2_type2)
+print(active2_move1)
+print(active2_move2)
+print(active2_move3)
+print(active2_move4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #print the list of the keys
