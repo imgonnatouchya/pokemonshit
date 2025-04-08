@@ -1321,97 +1321,53 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 #got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
 #will play out, change values and then repeat the code.
 
-starting_turn = input("Player 1 will you Fight switch or Concede")
-while starting_turn != "fight" or "Fight" or "Switch" or "switch" or "concede":
-    starting_turn = input("Player 1 will you Fight switch or Concede")
-if starting_turn == "fight" or "Fight":
-    start1_fight = input("Pick,", active_move1, active_move2, active_move3, active_move4)
-    if start1_fight == active_move1:
-        start_move = active_move1
-    if start1_fight == active_move2:
-        start_move = active_move2
-    if start1_fight == active_move3:
-        start_move = active_move3
-    if start1_fight == active_move4:
-        start_move = active_move4
-if starting_turn == "switch" or "Switch":
-    start1_switch = input("Pick, ", t1mon2, ",", t1mon3, ",", t1mon4, ",", t1mon5, ",", t1mon6)
-    if start1_switch == t1mon2:
-        start_move = "swap2"
-    if start1_switch == t1mon3:
-        start_move = "swap3"
-    if start1_switch == t1mon4:
-        start_move = "swap4"
-    if start1_switch == t1mon5:
-        start_move = "swap5"
-    if start1_switch == t1mon6:
-        start_move = "swap6"
-if starting_turn == "concede":
-    print("player 2 wins ")
-    
-check = input("Player 2 ready?")
-while check != "yes" or "Yes":
-    check = input("Player 2 ready?")
-mcjagger = "x"
-if check == "yes" or "Yes":
-    starting_turn2 = input("Player 2 will you Fight switch or Concede")
-    while starting_turn2 != "fight" or "Fight" or "Switch" or "switch" or "concede":
-        starting_turn2 = input("Player 2 will you Fight switch or Concede")
-    if starting_turn2 == "fight" or "Fight":
-        start1_fight2 = input("Pick,", active2_move1, active2_move2, active2_move3, active2_move4)
-        if start1_fight2 == active2_move1:
-            start_move2 = active2_move1
-        if start1_fight2 == active2_move2:
-            start_move2 = active2_move2
-        if start1_fight2 == active2_move3:
-            start_move2 = active2_move3
-        if start1_fight2 == active2_move4:
-            start_move2 = active2_move4
-    if starting_turn2 == "switch" or "Switch":
-        start1_switch2 = input("Pick, ", t1mon2, ",", t1mon3, ",", t1mon4, ",", t1mon5, ",", t1mon6)
-        if start1_switch2 == t1mon2:
-            start_move2 = "swap2"
-        if start1_switch2 == t1mon3:
-            start_move2 = "swap3"
-        if start1_switch2 == t1mon4:
-            start_move2 = "swap4"
-        if start1_switch2 == t1mon5:
-            start_move2 = "swap5"
-        if start1_switch2 == t1mon6:
-            start_move2 = "swap6"
+while t1_points and t2_points != 6:
+    turn_p1 = input("Fight or switch")
+    if turn_p1 == "switch" or "Switch":
+        switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
+        while switch_p1 == "back" or "Back":
+                turn_p1 = input("Fight or switch")
+                if turn_p1 == "switch" or "Switch":
+                    switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
+        
+        if switch_p1 == t1mon2:
+            move_p1 = "switch2"
+        elif switch_p1 == t1mon3:
+            move_p1 = "switch3"
+        elif switch_p1 == t1mon4:
+            move_p1 = "switch4"
+        elif switch_p1 == t1mon5:
+            move_p1 = "switch5"
+        elif switch_p1 == t1mon6:
+            move_p1 = "switch6"
+        else:
+            print("nope")
+    elif turn_p1 == "fight" or "Fight":
+        attack_p1 = input("Pick,", active_move1, active_move2, active_move3, active_move4, " or back")
+        while attack_p1 == "back" or "Back":
+            turn_p1 = input("Fight or switch")
+            if turn_p1 == "fight" or "Fight":
+                attack_p1 = input("Pick,", active_move1, active_move2, active_move3, active_move4, " or back")
+        if attack_p1 == active_move1:
+            move_p1 = "attack1"
+        elif attack_p1 == active_move2:
+            move_p1 = "attack2"
+        elif attack_p1 == active_move3:
+            move_p1 = "attack3"
+        elif attack_p1 == active_move4:
+            move_p1 = "attack4"
+        else:
+            print("nuh uh")
+    print(move_p1)
 
-print(start_move, start_move2)
-turn_order = 0
-spe_tie = (1,2)
-if active_spe_stats > active2_spe_stats:
-    turn_order = 1
-elif active_spe_stats < active2_spe_stats:
-    turn_order = 2
-elif active_spe_stats == active2_spe_stats:
-    turn_order = random.choice(spe_tie)
-else:
-    print("dont work dingus")
 
-if turn_order == 1:
-    if start_move == "swap2":
-        active = t1mon2
-        print("Player 1 swapped to ", active)
-    elif start_move == "swap3":
-        active = t1mon3
-        print("Player 1 swapped to ", active)
-    elif start_move == "swap4":
-        active = t1mon4
-        print("Player 1 swapped to ", active)
-    elif start_move == "swap5":
-        active = t1mon5
-        print("Player 1 swapped to ", active)
-    elif start_move == "swap6":
-        active = t1mon6
-        print("Player 1 swapped to ", active)
+
+
+
+   
 #need damage numbers, types, effectiveness, and two equations for physical and special 
 roles = (217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227,228, 229, 230, 231,232, 233, 234, 235, 236, 237, 238,239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255)
 role = random.choice(roles)
-print((((((((((100/5)+2)*move power(active_atk_stats/active2_def_stats)/50)+2)*role)*X/10)*Y))))
 
 
 
