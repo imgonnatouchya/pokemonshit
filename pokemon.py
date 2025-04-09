@@ -374,7 +374,7 @@ pokemon = {"venusaur":
            "spa":65,
            "spd":110,
            "spe":30,
-           "m1":"yaqn",
+           "m1":"yawn",
            "m2":"protect",
            "m3":"earthquake",
            "m4":"body slam",
@@ -419,6 +419,9 @@ pokemon = {"venusaur":
            {"type":{"type1":"psychic", "type2":"none"}},
            
            }
+
+moves = {"
+
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
 pokemon_keys = list(pokemon.keys())
 #assign team 1
