@@ -1360,17 +1360,18 @@ while t1_points and t2_points != 6:
             print("nuh uh")
     print(move_p1)
 
-
+if t1_points or t2_points == 6:
+    print("black")
 
 
 
    
 #need damage numbers, types, effectiveness, and two equations for physical and special 
-roles = (217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227,228, 229, 230, 231,232, 233, 234, 235, 236, 237, 238,239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255)
-role = random.choice(roles)
-
-
-
+stab = 1.0
+effective = 1
+role = random.uniform(0.85, 1.0)
+print(role)
+print(math.floor(((((2.0*50.0)/5.0)+2.0)*90.0*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab*effective)
 
 
 
