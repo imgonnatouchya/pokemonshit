@@ -3,6 +3,7 @@
 # by going like x[key], and then it'll retrieve the value of the key
 # keys can have identical values but values cannot have identical keys
 # vvv you can also nest them like so vvv
+#Landon Mann
 import random
 import math
 pokemon = {"venusaur":
@@ -326,29 +327,165 @@ pokemon = {"venusaur":
            "nature":"timid"},
 
            "kabutops":
-           {"type":{"type1":"water", "type2":"rock"}},
+            {"type":{"type1":"water", "type2":"rock"},
+           "hp":60,
+           "atk":115,
+           "def":105,
+           "spa":65,
+           "spd":70,
+           "spe":55,
+           "m1":"rapid spin",
+           "m2":"knock off",
+           "m3":"stone edge",
+           "m4":"liquidation",
+           "hp_ev":0,
+           "atk_ev":252,
+           "def_ev":4,
+           "spa_ev":0,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"adamant"},
 
 
            "aerodactyl":
-           {"type":{"type1":"rock", "type2":"flying"}},
+           {"type":{"type1":"rock", "type2":"flying"},
+           "hp":80,
+           "atk":105,
+           "def":65,
+           "spa":60,
+           "spd":75,
+           "spe":130,
+           "m1":"roost",
+           "m2":"stealth rock",
+           "m3":"stone edge",
+           "m4":"earthquake",
+           "hp_ev":0,
+           "atk_ev":252,
+           "def_ev":4,
+           "spa_ev":0,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"adamant"},
 
            "snorlax":
-           {"type":{"type1":"normal", "type2":"none"}},
+           {"type":{"type1":"normal", "type2":"none"},
+           "hp":160,
+           "atk":110,
+           "def":65,
+           "spa":65,
+           "spd":110,
+           "spe":30,
+           "m1":"yaqn",
+           "m2":"protect",
+           "m3":"earthquake",
+           "m4":"body slam",
+           "hp_ev":140,
+           "atk_ev":116,
+           "def_ev":252,
+           "spa_ev":0,
+           "spd_ev":0,
+           "spe_ev":0,
+           "nature":"adamant"},
 
            "articuno":
-           {"type":{"type1":"ice", "type2":"flying"}},
+           {"type":{"type1":"ice", "type2":"flying"},
+           "hp":90,
+           "atk":85,
+           "def":100,
+           "spa":95,
+           "spd":125,
+           "spe":85,
+           "m1":"freeze dry",
+           "m2":"roost",
+           "m3":"roost",
+           "m4":"haze",
+           "hp_ev":248,
+           "atk_ev":0,
+           "def_ev":0,
+           "spa_ev":208,
+           "spd_ev":0,
+           "spe_ev":52,
+           "nature":"modest"},
 
            "zapdos":
-           {"type":{"type1":"electric", "type2":"flying"}},
+           {"type":{"type1":"electric", "type2":"flying"},
+           "hp":70,
+           "atk":60,
+           "def":125,
+           "spa":115,
+           "spd":70,
+           "spe":55,
+           "m1":"shell smash",
+           "m2":"hydro pump",
+           "m3":"endure",
+           "m4":"power gem",
+           "hp_ev":0,
+           "atk_ev":0,
+           "def_ev":4,
+           "spa_ev":252,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"timid"},
 
            "moltres":
-           {"type":{"type1":"fire", "type2":"flying"}},
+           {"type":{"type1":"fire", "type2":"flying"}, 
+           "hp":70,
+           "atk":60,
+           "def":125,
+           "spa":115,
+           "spd":70,
+           "spe":55,
+           "m1":"shell smash",
+           "m2":"hydro pump",
+           "m3":"endure",
+           "m4":"power gem",
+           "hp_ev":0,
+           "atk_ev":0,
+           "def_ev":4,
+           "spa_ev":252,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"timid"},
 
            "dragonite":
-           {"type":{"type1":"dragon", "type2":"flying"}},
+           {"type":{"type1":"dragon", "type2":"flying"},
+           "hp":70,
+           "atk":60,
+           "def":125,
+           "spa":115,
+           "spd":70,
+           "spe":55,
+           "m1":"shell smash",
+           "m2":"hydro pump",
+           "m3":"endure",
+           "m4":"power gem",
+           "hp_ev":0,
+           "atk_ev":0,
+           "def_ev":4,
+           "spa_ev":252,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"timid"},
 
            "mewtwo":
-           {"type":{"type1":"psychic", "type2":"none"}},
+           {"type":{"type1":"psychic", "type2":"none"}, 
+           "hp":106,
+           "atk":110,
+           "def":90,
+           "spa":115,
+           "spd":70,
+           "spe":55,
+           "m1":"shell smash",
+           "m2":"hydro pump",
+           "m3":"endure",
+           "m4":"power gem",
+           "hp_ev":0,
+           "atk_ev":0,
+           "def_ev":4,
+           "spa_ev":252,
+           "spd_ev":0,
+           "spe_ev":252,
+           "nature":"timid"},
         }
            
 
@@ -371,7 +508,6 @@ t2mon6 = random.choice(pokemon_keys)
 
 active = str(t1mon1)
 active2 = str(t2mon1)
-
 #base stats
 active_hp = 0
 active_atk = 0
@@ -954,7 +1090,7 @@ if active == pokemon_keys[23]:
 
 
 #team 2
-if active == pokemon_keys[0]:
+if active2 == pokemon_keys[0]:
     active2_hp = 80
     active2_atk = 82
     active2_def = 83
@@ -1593,8 +1729,8 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 #got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
 #will play out, change values and then repeat the code.
 
-while t1_points and t2_points != 6:
-    turn_p1 = input("Fight or switch")
+while t1_points != 6 and t2_points != 6:
+    turn_p1 = input("Fight or switch: ")
     if turn_p1 == "switch" or "Switch":
         switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
         while switch_p1 == "back" or "Back":
@@ -1632,18 +1768,20 @@ while t1_points and t2_points != 6:
             print("nuh uh")
     print(move_p1)
 
-if t1_points or t2_points == 6:
-    print("black")
 
 
 
-   
+
 #need damage numbers, types, effectiveness, and two equations for physical and special 
 stab = 1.0
 effective = 1
+#90 is a placeholder for now 
+power = 90
 role = random.uniform(0.85, 1.0)
-print(role)
-print(math.floor(((((2.0*50.0)/5.0)+2.0)*90.0*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab*effective)
+print(round(role, 2))
+calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*power*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
+print(calculation)
+print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2, "w/ a 90 base power move")
 
 
 
