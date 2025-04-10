@@ -409,85 +409,109 @@ pokemon = {"venusaur":
 
            "zapdos":
            {"type":{"type1":"electric", "type2":"flying"},
-           "hp":70,
-           "atk":60,
-           "def":125,
-           "spa":115,
-           "spd":70,
-           "spe":55,
-           "m1":"shell smash",
-           "m2":"hydro pump",
-           "m3":"endure",
-           "m4":"power gem",
-           "hp_ev":0,
+           "hp":90,
+           "atk":90,
+           "def":85,
+           "spa":125,
+           "spd":90,
+           "spe":100,
+           "m1":"hurricane",
+           "m2":"volt switch",
+           "m3":"thunder wave",
+           "m4":"roost",
+           "hp_ev":248,
            "atk_ev":0,
            "def_ev":4,
-           "spa_ev":252,
+           "spa_ev":244,
            "spd_ev":0,
-           "spe_ev":252,
+           "spe_ev":16,
            "nature":"timid"},
 
            "moltres":
            {"type":{"type1":"fire", "type2":"flying"}, 
-           "hp":70,
-           "atk":60,
-           "def":125,
-           "spa":115,
-           "spd":70,
-           "spe":55,
-           "m1":"shell smash",
-           "m2":"hydro pump",
-           "m3":"endure",
-           "m4":"power gem",
-           "hp_ev":0,
+           "hp":90,
+           "atk":100,
+           "def":90,
+           "spa":125,
+           "spd":85,
+           "spe":90,
+           "m1":"flamethrower",
+           "m2":"will-o-wisp",
+           "m3":"air slash",
+           "m4":"roost",
+           "hp_ev":248,
            "atk_ev":0,
-           "def_ev":4,
-           "spa_ev":252,
+           "def_ev":248,
+           "spa_ev":0,
            "spd_ev":0,
-           "spe_ev":252,
-           "nature":"timid"},
+           "spe_ev":12,
+           "nature":"bold"},
 
            "dragonite":
            {"type":{"type1":"dragon", "type2":"flying"},
-           "hp":70,
-           "atk":60,
-           "def":125,
-           "spa":115,
-           "spd":70,
-           "spe":55,
-           "m1":"shell smash",
-           "m2":"hydro pump",
-           "m3":"endure",
-           "m4":"power gem",
-           "hp_ev":0,
-           "atk_ev":0,
+           "hp":91,
+           "atk":134,
+           "def":95,
+           "spa":100,
+           "spd":100,
+           "spe":80,
+           "m1":"outrage",
+           "m2":"stomping tantrum",
+           "m3":"aerial ace",
+           "m4":"extreme speed",
+           "hp_ev":244,
+           "atk_ev":252,
            "def_ev":4,
-           "spa_ev":252,
-           "spd_ev":0,
-           "spe_ev":252,
-           "nature":"timid"},
+           "spa_ev":0,
+           "spd_ev":4,
+           "spe_ev":4,
+           "nature":"adamant"},
 
            "mewtwo":
            {"type":{"type1":"psychic", "type2":"none"}, 
            "hp":106,
            "atk":110,
            "def":90,
-           "spa":115,
-           "spd":70,
-           "spe":55,
-           "m1":"shell smash",
-           "m2":"hydro pump",
-           "m3":"endure",
-           "m4":"power gem",
+           "spa":154,
+           "spd":90,
+           "spe":130,
+           "m1":"nasty plot",
+           "m2":"psystrike",
+           "m3":"thunderbolt",
+           "m4":"ice beam",
            "hp_ev":0,
            "atk_ev":0,
-           "def_ev":4,
+           "def_ev":0,
            "spa_ev":252,
-           "spd_ev":0,
+           "spd_ev":4,
            "spe_ev":252,
            "nature":"timid"},
         }
            
+moves = {"sludge bomb",
+         "left storm",
+         "poison powder",
+         "protect",
+         "blast burn",
+         "heat wave",
+         "air slash",
+         "scorching sands",
+         "water pledge",
+         "shell smash",
+         "flash cannon",
+         "water spout",
+         "substitute",
+         "quiver dance",
+         "sleep power",
+         "bug buzz",
+         "knock off",
+         "poison jab",
+         "drill run",
+         "u-turn",
+         "roost",
+         "brave bird",
+         "return",
+         }
 
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
 pokemon_keys = list(pokemon.keys())
@@ -1320,7 +1344,6 @@ if active2 == pokemon_keys[10]:
     active2_spd_evs = 252
     active2_spe_evs = 0
     active2_nature = "calm"
-
 if active2 == pokemon_keys[11]:
     active2_hp = 130
     active2_atk = 65
@@ -1731,7 +1754,8 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 
 while t1_points != 6 and t2_points != 6:
     turn_p1 = input("Fight or switch: ")
-    if turn_p1 == "switch" or "Switch":
+    if turn_p1 == "switch":
+        print("bsakjhbf")
         switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
         while switch_p1 == "back" or "Back":
                 turn_p1 = input("Fight or switch")
@@ -1766,6 +1790,8 @@ while t1_points != 6 and t2_points != 6:
             move_p1 = "attack4"
         else:
             print("nuh uh")
+    else:
+        print("nuh uh")
     print(move_p1)
 
 
