@@ -494,133 +494,133 @@ pokemon = {"venusaur":
 moves = {"sludge bomb":
          {"power": 0, "dmg_type": "special", "move_type": "poison"},
          "left storm":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "grass"},
          "poison powder":
          {"power": 0, "dmg_type": "status", "move_type": "poison"},
          "protect":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "blast burn":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "fire"},
          "heat wave":
-         {"power": 95, "dmg_type": "special", "move_type": "poison"},
+         {"power": 95, "dmg_type": "special", "move_type": "fire"},
          "air slash":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "flying"},
          "scorching sands":
-         {"power": 70, "dmg_type": "special", "move_type": "poison"},
+         {"power": 70, "dmg_type": "special", "move_type": "ground"},
          "water pledge":
-         {"power": 80, "dmg_type": "special", "move_type": "poison"},
+         {"power": 80, "dmg_type": "special", "move_type": "water"},
          "shell smash":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "flash cannon":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "steel"},
          "water spout":
-         {"power": 150, "dmg_type": "special", "move_type": "poison"},
+         {"power": 150, "dmg_type": "special", "move_type": "water"},
          "substitute":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "quiver dance":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "bug"},
          "sleep power":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "grass"},
          "bug buzz":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "bug"},
          "knock off":
-         {"power": 65, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 65, "dmg_type": "physical", "move_type": "dark"},
          "poison jab":
          {"power": 0, "dmg_type": "physical", "move_type": "poison"},
          "drill run":
-         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 80, "dmg_type": "physical", "move_type": "ground"},
          "u-turn":
-         {"power": 70, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 70, "dmg_type": "physical", "move_type": "bug"},
          "roost":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "flying"},
          "brave bird":
-         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 120, "dmg_type": "physical", "move_type": "flying"},
          "return":
-         {"power": 102, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 102, "dmg_type": "physical", "move_type": "normal"},
          "facade":
-         {"power": 0, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 0, "dmg_type": "physical", "move_type": "normal"},
          "sucker punch":
-         {"power": 70, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 70, "dmg_type": "physical", "move_type": "dark"},
          "crunch":
-         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 80, "dmg_type": "physical", "move_type": "dark"},
          "stealth rock":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "rock"},
          "earth power":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "ground"},
          "sludge wave":
          {"power": 95, "dmg_type": "special", "move_type": "poison"},
          "toxic":
          {"power": 0, "dmg_type": "status", "move_type": "poison"},
          "ice beam":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "ice"},
          "recover":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "moonblast":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "fairy"},
          "flamethrower":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "fire"},
          "scald":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "water"},
          "freeze dry":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "ice"},
          "perish song":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "haze":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "ice"},
          "wish":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "calm mind":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
          "thunderbolt":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "electric"},
          "volt switch":
-         {"power": 70, "dmg_type": "special", "move_type": "poison"},
+         {"power": 70, "dmg_type": "special", "move_type": "electric"},
          "alluring voice":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "fairy"},
          "flare blitz":
-         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 120, "dmg_type": "physical", "move_type": "fire"},
          "copycat":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "double edge":
-         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 120, "dmg_type": "physical", "move_type": "normal"},
          "agility":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
          "tri attack":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "normal"},
          "hydro pump":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         {"power": 0, "dmg_type": "special", "move_type": "water"},
          "power gem":
-         {"power": 90, "dmg_type": "special", "move_type": "poison"},
+         {"power": 90, "dmg_type": "special", "move_type": "rock"},
          "endure":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "rapid spin":
-         {"power": 40, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 40, "dmg_type": "physical", "move_type": "normal"},
          "stone edge":
-         {"power": 100, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 100, "dmg_type": "physical", "move_type": "rock"},
          "liquidation":
-         {"power": 85, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 85, "dmg_type": "physical", "move_type": "water"},
          "earthquake":
-         {"power": 100, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 100, "dmg_type": "physical", "move_type": "ground"},
          "yawn":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "body slam":
-         {"power": 85, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 85, "dmg_type": "physical", "move_type": "normal"},
          "thunder wave":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "electric"},
          "hurricane":
-         {"power": 110, "dmg_type": "special", "move_type": "poison"},
+         {"power": 110, "dmg_type": "special", "move_type": "flying"},
          "will-o-wisp":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "fire"},
          "outrage":
-         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 120, "dmg_type": "physical", "move_type": "dragon"},
          "extreme speed":
-         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 80, "dmg_type": "physical", "move_type": "normal"},
          "aerial ace":
-         {"power": 60, "dmg_type": "physical", "move_type": "poison"},
+         {"power": 60, "dmg_type": "physical", "move_type": "flying"},
          "nasty plot":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         {"power": 0, "dmg_type": "status", "move_type": "dark"},
          "psystrike":
-         {"power": 120, "dmg_type": "special", "move_type": "poison"},
+         {"power": 120, "dmg_type": "special", "move_type": "psycic"},
          }
 
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
