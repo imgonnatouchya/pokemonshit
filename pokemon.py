@@ -487,6 +487,7 @@ pokemon = {"venusaur":
            "spe_ev":252,
            "nature":"timid"},
         }
+
 #all moves have move types to determine effcetivness (fire 2x dmg to grass, etc) a dmg type
 #which determines what stat uses calculation (atk if physical that damages def, spp is special
 # that dmages spd, and status which for now will be no damage no effect (just a dead move)
@@ -1861,6 +1862,7 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 #Every time something is KO'd add 1 point to either t1_points or t2_points dpending on which team
 #got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
 #will play out, change values and then repeat the code.
+
 
 while t1_points != 6 and t2_points != 6:
     turn_p1 = input("Fight or switch: ")
