@@ -294,7 +294,7 @@ pokemon = {"venusaur":
            "spa":85,
            "spd":113,
            "spe":40,
-           "m1":"double edge",
+           "m1":"tri attack",
            "m2":"ice beam",
            "m3":"recover",
            "m4":"agility",
@@ -487,30 +487,140 @@ pokemon = {"venusaur":
            "spe_ev":252,
            "nature":"timid"},
         }
-           
-moves = {"sludge bomb",
-         "left storm",
-         "poison powder",
-         "protect",
-         "blast burn",
-         "heat wave",
-         "air slash",
-         "scorching sands",
-         "water pledge",
-         "shell smash",
-         "flash cannon",
-         "water spout",
-         "substitute",
-         "quiver dance",
-         "sleep power",
-         "bug buzz",
-         "knock off",
-         "poison jab",
-         "drill run",
-         "u-turn",
-         "roost",
-         "brave bird",
-         "return",
+#all moves have move types to determine effcetivness (fire 2x dmg to grass, etc) a dmg type
+#which determines what stat uses calculation (atk if physical that damages def, spp is special
+# that dmages spd, and status which for now will be no damage no effect (just a dead move)
+# as they act as an effect.)
+moves = {"sludge bomb":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "left storm":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "poison powder":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "protect":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "blast burn":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "heat wave":
+         {"power": 95, "dmg_type": "special", "move_type": "poison"},
+         "air slash":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "scorching sands":
+         {"power": 70, "dmg_type": "special", "move_type": "poison"},
+         "water pledge":
+         {"power": 80, "dmg_type": "special", "move_type": "poison"},
+         "shell smash":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "flash cannon":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "water spout":
+         {"power": 150, "dmg_type": "special", "move_type": "poison"},
+         "substitute":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "quiver dance":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "sleep power":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "bug buzz":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "knock off":
+         {"power": 65, "dmg_type": "physical", "move_type": "poison"},
+         "poison jab":
+         {"power": 0, "dmg_type": "physical", "move_type": "poison"},
+         "drill run":
+         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         "u-turn":
+         {"power": 70, "dmg_type": "physical", "move_type": "poison"},
+         "roost":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "brave bird":
+         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         "return":
+         {"power": 102, "dmg_type": "physical", "move_type": "poison"},
+         "facade":
+         {"power": 0, "dmg_type": "physical", "move_type": "poison"},
+         "sucker punch":
+         {"power": 70, "dmg_type": "physical", "move_type": "poison"},
+         "crunch":
+         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         "stealth rock":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "earth power":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "sludge wave":
+         {"power": 95, "dmg_type": "special", "move_type": "poison"},
+         "toxic":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "ice beam":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "recover":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "moonblast":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "flamethrower":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "scald":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "freeze dry":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "perish song":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "haze":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "wish":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "calm mind":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "thunderbolt":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "volt switch":
+         {"power": 70, "dmg_type": "special", "move_type": "poison"},
+         "alluring voice":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "flare blitz":
+         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         "copycat":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "double edge":
+         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         "agility":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "tri attack":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "hydro pump":
+         {"power": 0, "dmg_type": "special", "move_type": "poison"},
+         "power gem":
+         {"power": 90, "dmg_type": "special", "move_type": "poison"},
+         "endure":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "rapid spin":
+         {"power": 40, "dmg_type": "physical", "move_type": "poison"},
+         "stone edge":
+         {"power": 100, "dmg_type": "physical", "move_type": "poison"},
+         "liquidation":
+         {"power": 85, "dmg_type": "physical", "move_type": "poison"},
+         "earthquake":
+         {"power": 100, "dmg_type": "physical", "move_type": "poison"},
+         "yawn":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "body slam":
+         {"power": 85, "dmg_type": "physical", "move_type": "poison"},
+         "thunder wave":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "hurricane":
+         {"power": 110, "dmg_type": "special", "move_type": "poison"},
+         "will-o-wisp":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "outrage":
+         {"power": 120, "dmg_type": "physical", "move_type": "poison"},
+         "extreme speed":
+         {"power": 80, "dmg_type": "physical", "move_type": "poison"},
+         "aerial ace":
+         {"power": 60, "dmg_type": "physical", "move_type": "poison"},
+         "nasty plot":
+         {"power": 0, "dmg_type": "status", "move_type": "poison"},
+         "psystrike":
+         {"power": 120, "dmg_type": "special", "move_type": "poison"},
          }
 
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
@@ -888,7 +998,7 @@ if active == pokemon_keys[13]:
     active_spe = 65
     active_type1 = "fire"
     active_type2 = "none"
-    active_move1 = "flar blitz"
+    active_move1 = "flare blitz"
     active_move2 = "facade"
     active_move3 = "protect"
     active_move4 = "copycat"
@@ -909,7 +1019,7 @@ if active == pokemon_keys[14]:
     active_spe = 40
     active_type1 = "normal"
     active_type2 = "none"
-    active_move1 = "double edge"
+    active_move1 = "tri attack"
     active_move2 = "ice beam"
     active_move3 = "recover"
     active_move4 = "agility"
@@ -1395,7 +1505,7 @@ if active2 == pokemon_keys[13]:
     active2_spe = 65
     active2_type1 = "fire"
     active2_type2 = "none"
-    active2_move1 = "flar blitz"
+    active2_move1 = "flare blitz"
     active2_move2 = "facade"
     active2_move3 = "protect"
     active2_move4 = "copycat"
