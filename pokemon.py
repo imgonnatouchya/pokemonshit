@@ -484,7 +484,6 @@ pokemon = {"venusaur":
            "nature":"adamant"},
 
            "mewtwo":
-<<<<<<< HEAD
            {"type":{"type1":"psychic", "type2":"none"}, 
            "hp":106,
            "atk":110,
@@ -640,13 +639,11 @@ moves = {"sludge bomb":
          "psystrike":
          {"power": 120, "dmg_type": "special", "move_type": "psycic"},
          }
-=======
            {"type":{"type1":"psychic", "type2":"none"}},
            
            }
 
 moves = {"
->>>>>>> 1af56b0e10dc79b1b47e0ceccae1aea11c81e6c2
 
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
 pokemon_keys = list(pokemon.keys())
