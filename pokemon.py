@@ -247,24 +247,7 @@ pokemon = {"venusaur":
            "nature":"bold"},
            
            "jolteon":
-           {"type":{"type1":"electric", "type2":"none"},
-           "hp":65,
-           "atk":65,
-           "def":60,
-           "spa":110,
-           "spd":95,
-           "spe":130,
-           "m1":"calm mind",
-           "m2":"thundebolt",
-           "m3":"volt switch",
-           "m4":"alluring voice",
-           "hp_ev":0,
-           "atk_ev":0,
-           "def_ev":4,
-           "spa_ev":252,
-           "spd_ev":0,
-           "spe_ev":252,
-           "nature":"timid"},
+           {"type":{"type1":"electric", "type2":"none"}},
 
            "flareon":
            {"type":{"type1":"fire", "type2":"none"},
@@ -287,24 +270,7 @@ pokemon = {"venusaur":
            "nature":"adamant"},
 
            "porygon":
-           {"type":{"type1":"normal", "type2":"none"},
-           "hp":65,
-           "atk":60,
-           "def":105,
-           "spa":85,
-           "spd":113,
-           "spe":40,
-           "m1":"tri attack",
-           "m2":"ice beam",
-           "m3":"recover",
-           "m4":"agility",
-           "hp_ev":252,
-           "atk_ev":128,
-           "def_ev":124,
-           "spa_ev":0,
-           "spd_ev":4,
-           "spe_ev":0,
-           "nature":"brave"},
+           {"type":{"type1":"normal", "type2":"none"}},
 
            "omastar":
            {"type":{"type1":"water", "type2":"rock"},
@@ -327,24 +293,7 @@ pokemon = {"venusaur":
            "nature":"timid"},
 
            "kabutops":
-            {"type":{"type1":"water", "type2":"rock"},
-           "hp":60,
-           "atk":115,
-           "def":105,
-           "spa":65,
-           "spd":70,
-           "spe":55,
-           "m1":"rapid spin",
-           "m2":"knock off",
-           "m3":"stone edge",
-           "m4":"liquidation",
-           "hp_ev":0,
-           "atk_ev":252,
-           "def_ev":4,
-           "spa_ev":0,
-           "spd_ev":0,
-           "spe_ev":252,
-           "nature":"adamant"},
+           {"type":{"type1":"water", "type2":"rock"}},
 
 
            "aerodactyl":
@@ -368,24 +317,7 @@ pokemon = {"venusaur":
            "nature":"adamant"},
 
            "snorlax":
-           {"type":{"type1":"normal", "type2":"none"},
-           "hp":160,
-           "atk":110,
-           "def":65,
-           "spa":65,
-           "spd":110,
-           "spe":30,
-           "m1":"yaqn",
-           "m2":"protect",
-           "m3":"earthquake",
-           "m4":"body slam",
-           "hp_ev":140,
-           "atk_ev":116,
-           "def_ev":252,
-           "spa_ev":0,
-           "spd_ev":0,
-           "spe_ev":0,
-           "nature":"adamant"},
+           {"type":{"type1":"normal", "type2":"none"}},
 
            "articuno":
            {"type":{"type1":"ice", "type2":"flying"},
@@ -468,162 +400,9 @@ pokemon = {"venusaur":
            "nature":"adamant"},
 
            "mewtwo":
-           {"type":{"type1":"psychic", "type2":"none"}, 
-           "hp":106,
-           "atk":110,
-           "def":90,
-           "spa":154,
-           "spd":90,
-           "spe":130,
-           "m1":"nasty plot",
-           "m2":"psystrike",
-           "m3":"thunderbolt",
-           "m4":"ice beam",
-           "hp_ev":0,
-           "atk_ev":0,
-           "def_ev":0,
-           "spa_ev":252,
-           "spd_ev":4,
-           "spe_ev":252,
-           "nature":"timid"},
-        }
-
-#all moves have move types to determine effcetivness (fire 2x dmg to grass, etc) a dmg type
-#which determines what stat uses calculation (atk if physical that damages def, spp is special
-# that dmages spd, and status which for now will be no damage no effect (just a dead move)
-# as they act as an effect.)
-moves = {"sludge bomb":
-         {"power": 0, "dmg_type": "special", "move_type": "poison"},
-         "left storm":
-         {"power": 0, "dmg_type": "special", "move_type": "grass"},
-         "poison powder":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
-         "protect":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "blast burn":
-         {"power": 0, "dmg_type": "special", "move_type": "fire"},
-         "heat wave":
-         {"power": 95, "dmg_type": "special", "move_type": "fire"},
-         "air slash":
-         {"power": 0, "dmg_type": "special", "move_type": "flying"},
-         "scorching sands":
-         {"power": 70, "dmg_type": "special", "move_type": "ground"},
-         "water pledge":
-         {"power": 80, "dmg_type": "special", "move_type": "water"},
-         "shell smash":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "flash cannon":
-         {"power": 0, "dmg_type": "special", "move_type": "steel"},
-         "water spout":
-         {"power": 150, "dmg_type": "special", "move_type": "water"},
-         "substitute":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "quiver dance":
-         {"power": 0, "dmg_type": "status", "move_type": "bug"},
-         "sleep power":
-         {"power": 0, "dmg_type": "status", "move_type": "grass"},
-         "bug buzz":
-         {"power": 0, "dmg_type": "special", "move_type": "bug"},
-         "knock off":
-         {"power": 65, "dmg_type": "physical", "move_type": "dark"},
-         "poison jab":
-         {"power": 0, "dmg_type": "physical", "move_type": "poison"},
-         "drill run":
-         {"power": 80, "dmg_type": "physical", "move_type": "ground"},
-         "u-turn":
-         {"power": 70, "dmg_type": "physical", "move_type": "bug"},
-         "roost":
-         {"power": 0, "dmg_type": "status", "move_type": "flying"},
-         "brave bird":
-         {"power": 120, "dmg_type": "physical", "move_type": "flying"},
-         "return":
-         {"power": 102, "dmg_type": "physical", "move_type": "normal"},
-         "facade":
-         {"power": 0, "dmg_type": "physical", "move_type": "normal"},
-         "sucker punch":
-         {"power": 70, "dmg_type": "physical", "move_type": "dark"},
-         "crunch":
-         {"power": 80, "dmg_type": "physical", "move_type": "dark"},
-         "stealth rock":
-         {"power": 0, "dmg_type": "status", "move_type": "rock"},
-         "earth power":
-         {"power": 0, "dmg_type": "special", "move_type": "ground"},
-         "sludge wave":
-         {"power": 95, "dmg_type": "special", "move_type": "poison"},
-         "toxic":
-         {"power": 0, "dmg_type": "status", "move_type": "poison"},
-         "ice beam":
-         {"power": 0, "dmg_type": "special", "move_type": "ice"},
-         "recover":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "moonblast":
-         {"power": 0, "dmg_type": "special", "move_type": "fairy"},
-         "flamethrower":
-         {"power": 0, "dmg_type": "special", "move_type": "fire"},
-         "scald":
-         {"power": 0, "dmg_type": "special", "move_type": "water"},
-         "freeze dry":
-         {"power": 0, "dmg_type": "special", "move_type": "ice"},
-         "perish song":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "haze":
-         {"power": 0, "dmg_type": "status", "move_type": "ice"},
-         "wish":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "calm mind":
-         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
-         "thunderbolt":
-         {"power": 0, "dmg_type": "special", "move_type": "electric"},
-         "volt switch":
-         {"power": 70, "dmg_type": "special", "move_type": "electric"},
-         "alluring voice":
-         {"power": 0, "dmg_type": "special", "move_type": "fairy"},
-         "flare blitz":
-         {"power": 120, "dmg_type": "physical", "move_type": "fire"},
-         "copycat":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "double edge":
-         {"power": 120, "dmg_type": "physical", "move_type": "normal"},
-         "agility":
-         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
-         "tri attack":
-         {"power": 0, "dmg_type": "special", "move_type": "normal"},
-         "hydro pump":
-         {"power": 0, "dmg_type": "special", "move_type": "water"},
-         "power gem":
-         {"power": 90, "dmg_type": "special", "move_type": "rock"},
-         "endure":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "rapid spin":
-         {"power": 40, "dmg_type": "physical", "move_type": "normal"},
-         "stone edge":
-         {"power": 100, "dmg_type": "physical", "move_type": "rock"},
-         "liquidation":
-         {"power": 85, "dmg_type": "physical", "move_type": "water"},
-         "earthquake":
-         {"power": 100, "dmg_type": "physical", "move_type": "ground"},
-         "yawn":
-         {"power": 0, "dmg_type": "status", "move_type": "normal"},
-         "body slam":
-         {"power": 85, "dmg_type": "physical", "move_type": "normal"},
-         "thunder wave":
-         {"power": 0, "dmg_type": "status", "move_type": "electric"},
-         "hurricane":
-         {"power": 110, "dmg_type": "special", "move_type": "flying"},
-         "will-o-wisp":
-         {"power": 0, "dmg_type": "status", "move_type": "fire"},
-         "outrage":
-         {"power": 120, "dmg_type": "physical", "move_type": "dragon"},
-         "extreme speed":
-         {"power": 80, "dmg_type": "physical", "move_type": "normal"},
-         "aerial ace":
-         {"power": 60, "dmg_type": "physical", "move_type": "flying"},
-         "nasty plot":
-         {"power": 0, "dmg_type": "status", "move_type": "dark"},
-         "psystrike":
-         {"power": 120, "dmg_type": "special", "move_type": "psycic"},
-         }
-
+           {"type":{"type1":"psychic", "type2":"none"}},
+           
+           }
 #this is the list team assign randomizer as well as all the base stats set to the active slot(stats that will change when active changes)
 pokemon_keys = list(pokemon.keys())
 #assign team 1
@@ -643,6 +422,7 @@ t2mon6 = random.choice(pokemon_keys)
 
 active = str(t1mon1)
 active2 = str(t2mon1)
+
 #base stats
 active_hp = 0
 active_atk = 0
@@ -679,7 +459,7 @@ nature_drop_spa = 1
 nature_drop_spd = 1
 nature_drop_spe = 1
 
-#stats for team 2
+#------STATS FOR TEAM 2------
 #base stats
 active2_hp = 0
 active2_atk = 0
