@@ -247,11 +247,7 @@ pokemon = {"venusaur":
            "nature":"bold"},
            
            "jolteon":
-<<<<<<< HEAD
            {"type":{"type1":"electric", "type2":"none"},
-=======
-           {"type":{"type1":"electric", "type2":"none"}
->>>>>>> 1af56b0e10dc79b1b47e0ceccae1aea11c81e6c2
            "hp":65,
            "atk":65,
            "def":60,
@@ -298,18 +294,14 @@ pokemon = {"venusaur":
            "spa":85,
            "spd":113,
            "spe":40,
-<<<<<<< HEAD
            "m1":"tri attack",
-=======
-           "m1":"double edge",
->>>>>>> 1af56b0e10dc79b1b47e0ceccae1aea11c81e6c2
            "m2":"ice beam",
            "m3":"recover",
            "m4":"agility",
            "hp_ev":252,
-           "atk_ev":128,
+           "atk_ev":0,
            "def_ev":124,
-           "spa_ev":0,
+           "spa_ev":145,
            "spd_ev":4,
            "spe_ev":0,
            "nature":"brave"},
@@ -335,11 +327,7 @@ pokemon = {"venusaur":
            "nature":"timid"},
 
            "kabutops":
-<<<<<<< HEAD
-            {"type":{"type1":"water", "type2":"rock"},
-=======
            {"type":{"type1":"water", "type2":"rock"},
->>>>>>> 1af56b0e10dc79b1b47e0ceccae1aea11c81e6c2
            "hp":60,
            "atk":115,
            "def":105,
@@ -387,11 +375,7 @@ pokemon = {"venusaur":
            "spa":65,
            "spd":110,
            "spe":30,
-<<<<<<< HEAD
-           "m1":"yaqn",
-=======
            "m1":"yawn",
->>>>>>> 1af56b0e10dc79b1b47e0ceccae1aea11c81e6c2
            "m2":"protect",
            "m3":"earthquake",
            "m4":"body slam",
@@ -639,7 +623,6 @@ moves = {"sludge bomb":
          "psystrike":
          {"power": 120, "dmg_type": "special", "move_type": "psycic"},
          }
-           {"type":{"type1":"psychic", "type2":"none"}},
            
            }
 
