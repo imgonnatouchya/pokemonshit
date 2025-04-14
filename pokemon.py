@@ -299,9 +299,9 @@ pokemon = {"venusaur":
            "m3":"recover",
            "m4":"agility",
            "hp_ev":252,
-           "atk_ev":128,
+           "atk_ev":0,
            "def_ev":124,
-           "spa_ev":0,
+           "spa_ev":145,
            "spd_ev":4,
            "spe_ev":0,
            "nature":"modest"},
@@ -1860,7 +1860,7 @@ t2_points=0
 print("Battle Start")
 print("Player 1 sent out,", active, ",", active_type1, ",", active_type2)
 print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
-
+print(" ")
 #Here we need to make a code that will loop to have infinite turns until someone types concede,
 #or one side takes out all 6 pokemon. An input should be repeated, either fight, switch, or
 #concede. If either fight or switch are chosen it will either display your switches or your active
@@ -1869,48 +1869,252 @@ print("Player 2 sent out,", active2, ",", active2_type1, ",", active2_type2)
 #got the KO. If all inputs are entered (and none are the cause the game to end) then the calculation
 #will play out, change values and then repeat the code.
 
-
+turn_num = 1
 while t1_points != 6 and t2_points != 6:
+    print("Turn",turn_num)
     turn_p1 = input("Fight or switch: ")
     if turn_p1 == "switch":
-        print("bsakjhbf")
-        switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
-        while switch_p1 == "back" or "Back":
-                turn_p1 = input("Fight or switch")
-                if turn_p1 == "switch" or "Switch":
-                    switch_p1 = input("Swap to,", t1mon2, t1mon3, t1mon4, t1mon5, t1mon6 , " or back")
-        
+        print("[", t1mon2,"]",  "[", t1mon3,"]", "[", t1mon4,"]", "[", t1mon5,"]", "[", t1mon6, "]")
+        switch_p1 = input("Swap to, mon2, mon3, mon4, mon5, mon6: ")
         if switch_p1 == t1mon2:
+            move_p1 = "switch2"
+        elif switch_p1 == "mon2":
             move_p1 = "switch2"
         elif switch_p1 == t1mon3:
             move_p1 = "switch3"
+        elif switch_p1 == "mon3":
+            move_p1 = "switch3"
         elif switch_p1 == t1mon4:
+            move_p1 = "switch4"
+        elif switch_p1 == "mon4":
             move_p1 = "switch4"
         elif switch_p1 == t1mon5:
             move_p1 = "switch5"
+        elif switch_p1 == "mon5":
+            move_p1 = "switch5"
         elif switch_p1 == t1mon6:
+            move_p1 = "switch6"
+        elif switch_p1 == "mon6":
             move_p1 = "switch6"
         else:
             print("nope")
-    elif turn_p1 == "fight" or "Fight":
-        attack_p1 = input("Pick,", active_move1, active_move2, active_move3, active_move4, " or back")
-        while attack_p1 == "back" or "Back":
-            turn_p1 = input("Fight or switch")
-            if turn_p1 == "fight" or "Fight":
-                attack_p1 = input("Pick,", active_move1, active_move2, active_move3, active_move4, " or back")
+    elif turn_p1 == "Switch":
+        print("[", t1mon2,"]",  "[", t1mon3,"]", "[", t1mon4,"]", "[", t1mon5,"]", "[", t1mon6, "]")
+        switch_p1 = input("Swap to, mon2, mon3, mon4, mon5, mon6: ")
+        if switch_p1 == t1mon2:
+            move_p1 = "switch2"
+        elif switch_p1 == "mon2":
+            move_p1 = "switch2"
+        elif switch_p1 == t1mon3:
+            move_p1 = "switch3"
+        elif switch_p1 == "mon3":
+            move_p1 = "switch3"
+        elif switch_p1 == t1mon4:
+            move_p1 = "switch4"
+        elif switch_p1 == "mon4":
+            move_p1 = "switch4"
+        elif switch_p1 == t1mon5:
+            move_p1 = "switch5"
+        elif switch_p1 == "mon5":
+            move_p1 = "switch5"
+        elif switch_p1 == t1mon6:
+            move_p1 = "switch6"
+        elif switch_p1 == "mon6":
+            move_p1 = "switch6"
+        else:
+            print("nope")
+    elif turn_p1 == "fight":
+        print("[", active_move1,"]",  "[", active_move2,"]", "[", active_move3,"]", "[", active_move4,"]" )
+        attack_p1 = input("Pick, move1, move2, move3, or move4: ")
         if attack_p1 == active_move1:
+            move_p1 = "attack1"
+        elif attack_p1 == "move1":
             move_p1 = "attack1"
         elif attack_p1 == active_move2:
             move_p1 = "attack2"
+        elif attack_p1 == "move2":
+            move_p1 = "attack2"
         elif attack_p1 == active_move3:
             move_p1 = "attack3"
+        elif attack_p1 == "move3":
+            move_p1 = "attack3"
         elif attack_p1 == active_move4:
+            move_p1 = "attack4"
+        elif attack_p1 == "move4":
+            move_p1 = "attack4"
+        else:
+            print("nuh uh")
+    elif turn_p1 == "Fight":
+        print("[", active_move1,"]",  "[", active_move2,"]", "[", active_move3,"]", "[", active_move4,"]" )
+        attack_p1 = input("Pick, move1, move2, move3, or move4: ")
+        if attack_p1 == active_move1:
+            move_p1 = "attack1"
+        elif attack_p1 == "move1":
+            move_p1 = "attack1"
+        elif attack_p1 == active_move2:
+            move_p1 = "attack2"
+        elif attack_p1 == "move2":
+            move_p1 = "attack2"
+        elif attack_p1 == active_move3:
+            move_p1 = "attack3"
+        elif attack_p1 == "move3":
+            move_p1 = "attack3"
+        elif attack_p1 == active_move4:
+            move_p1 = "attack4"
+        elif attack_p1 == "move4":
             move_p1 = "attack4"
         else:
             print("nuh uh")
     else:
         print("nuh uh")
-    print(move_p1)
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
+    next_player = input("Player 2 ready?: ")
+    if next_player == "yes":
+        turn_p2 = input("Fight or switch: ")
+        if turn_p2 == "switch":
+            print("[", t2mon2,"]",  "[", t2mon3,"]", "[", t2mon4,"]", "[", t2mon5,"]", "[", t2mon6, "]")
+            switch_p2 = input("Swap to, mon2, mon3, mon4, mon5, mon6: ")
+            if switch_p2 == t2mon2:
+                move_p2 = "switch2"
+            elif switch_p2 == "mon2":
+                move_p2 = "switch2"
+            elif switch_p2 == t2mon3:
+                move_p2 = "switch3"
+            elif switch_p2 == "mon3":
+                move_p2 = "switch3"
+            elif switch_p2 == t2mon4:
+                move_p2 = "switch4"
+            elif switch_p2 == "mon4":
+                move_p2 = "switch4"
+            elif switch_p2 == t2mon5:
+                move_p2 = "switch5"
+            elif switch_p2 == "mon5":
+                move_p2 = "switch5"
+            elif switch_p2 == t2mon6:
+                move_p2 = "switch6"
+            elif switch_p2 == "mon6":
+                move_p2 = "switch6"
+            else:
+                print("nope")
+        elif turn_p2 == "Switch":
+            print("[", t2mon2,"]",  "[", t2mon3,"]", "[", t2mon4,"]", "[", t2mon5,"]", "[", t2mon6, "]")
+            switch_p2 = input("Swap to, mon2, mon3, mon4, mon5, mon6: ")
+            if switch_p2 == t2mon2:
+                move_p2 = "switch2"
+            elif switch_p2 == "mon2":
+                move_p2 = "switch2"
+            elif switch_p2 == t2mon3:
+                move_p2 = "switch3"
+            elif switch_p2 == "mon3":
+                move_p2 = "switch3"
+            elif switch_p2 == t2mon4:
+                move_p2 = "switch4"
+            elif switch_p2 == "mon4":
+                move_p2 = "switch4"
+            elif switch_p2 == t2mon5:
+                move_p2 = "switch5"
+            elif switch_p2 == "mon5":
+                move_p2 = "switch5"
+            elif switch_p2 == t2mon6:
+                move_p2 = "switch6"
+            elif switch_p2 == "mon6":
+                move_p2 = "switch6"
+            else:
+                print("nope")
+        elif turn_p2 == "fight":
+            print("[", active2_move1,"]",  "[", active2_move2,"]", "[", active2_move3,"]", "[", active2_move4,"]" )
+            attack_p2 = input("Pick, move1, move2, move3, or move4: ")
+            if attack_p2 == active2_move1:
+                move_p2 = "attack1"
+            elif attack_p2 == "move1":
+                move_p2 = "attack1"
+            elif attack_p2 == active2_move2:
+                move_p2 = "attack2"
+            elif attack_p2 == "move2":
+                move_p2 = "attack2"
+            elif attack_p2 == active_move3:
+                move_p2 = "attack3"
+            elif attack_p2 == "move3":
+                move_p2 = "attack3"
+            elif attack_p2 == active_move4:
+                move_p2 = "attack4"
+            elif attack_p2 == "move4":
+                move_p2 = "attack4"
+            else:
+                print("nuh uh")
+        elif turn_p2 == "Fight":
+            print("[", active2_move1,"]",  "[", active2_move2,"]", "[", active2_move3,"]", "[", active2_move4,"]" )
+            attack_p2 = input("Pick, move1, move2, move3, or move4: ")
+            if attack_p2 == active2_move1:
+                move_p2 = "attack1"
+            elif attack_p2 == "move1":
+                move_p2 = "attack1"
+            elif attack_p2 == active2_move2:
+                move_p2 = "attack2"
+            elif attack_p2 == "move2":
+                move_p2 = "attack2"
+            elif attack_p2 == active2_move3:
+                move_p2 = "attack3"
+            elif attack_p2 == "move3":
+                move_p2 = "attack3"
+            elif attack_p2 == active2_move4:
+                move_p2 = "attack4"
+            elif attack_p2 == "move4":
+                move_p2 = "attack4"
+            else:
+                print("nuh uh")
+        else:
+            print("nuh uh")
+    else:
+        ("worng answer")
+    # moves play out
+    spe_tie = (1, 2)
+    if active_spe_stats >= active2_spe_stats:
+        faster_mon = 1
+    elif active_spe_stats <= active2_spe_stats:
+        faster_mon = 2
+    elif active_spe_stats == active2_spe_stats:
+        faster_mon = random.choice(spe_tie)
+    else:
+        print("nuh uh")
+
+    
+
+    if faster_mon == 1:
+        if move_p1 == "switch2":
+            active, t1mon2 == t1mon2, active
+            print("Player 1 withdrew,", t1mon2, ", Go,", active)
+        elif move_p1 == "switch3":
+            active, t1mon3 == t1mon3, active
+            print("Player 1 withdrew,", t1mon3, ", Go,", active)
+        elif move_p1 == "switch4":
+            active, t1mon4 == t1mon4, active
+            print("Player 1 withdrew,", t1mon4, ", Go,", active)
+        elif move_p1 == "switch5":
+            active, t1mon5 == t1mon5, active
+            print("Player 1 withdrew,", t1mon5, ", Go,", active)
+        elif move_p1 == "switch6":
+            active, t1mon6 == t1mon6, active
+            print("Player 1 withdrew,", t1mon6, ", Go,", active)
+        elif move_p1 == "attack1":
+            print("jjhfsbvjlshbvhs")
+
+
+        
+
+
+
+    turn_num += 1
+
+
 
 
 
