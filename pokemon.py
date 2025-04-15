@@ -1194,7 +1194,7 @@ if active == pokemon_keys[22]:
     active_spe = 80
     active_type1 = "dragon"
     active_type2 = "flying"
-    active_move1 = moves["outrage "]
+    active_move1 = moves["outrage"]
     active_move2 = moves["extreme speed"]
     active_move3 = moves["stomping tantrum"]
     active_move4 = moves["aerial ace"]
@@ -1702,7 +1702,7 @@ if active2 == pokemon_keys[22]:
     active2_spe = 80
     active2_type1 = "dragon"
     active2_type2 = "flying"
-    active2_move1 = moves["outrage "]
+    active2_move1 = moves["outrage"]
     active2_move2 = moves["extreme speed"]
     active2_move3 = moves["stomping tantrum"]
     active2_move4 = moves["aerial ace"]
@@ -2103,25 +2103,44 @@ while t1_points != 6 and t2_points != 6:
     else:
         print("nuh uh")
 
-    
+
 
     if faster_mon == 1:
         if move_p1 == "switch2":
             active, t1mon2 == t1mon2, active
-            print("Player 1 withdrew,", t1mon2, ", Go,", active)
+            print("Player 1 withdrew,", active, ", Go,", t1mon2)
         elif move_p1 == "switch3":
             active, t1mon3 == t1mon3, active
-            print("Player 1 withdrew,", t1mon3, ", Go,", active)
+            print("Player 1 withdrew,", active, ", Go,", t1mon3)
         elif move_p1 == "switch4":
             active, t1mon4 == t1mon4, active
-            print("Player 1 withdrew,", t1mon4, ", Go,", active)
+            print("Player 1 withdrew,", active, ", Go,", t1mon4)
         elif move_p1 == "switch5":
             active, t1mon5 == t1mon5, active
-            print("Player 1 withdrew,", t1mon5, ", Go,", active)
+            print("Player 1 withdrew,", active, ", Go,", t1mon5)
         elif move_p1 == "switch6":
             active, t1mon6 == t1mon6, active
-            print("Player 1 withdrew,", t1mon6, ", Go,", active)
-        elif move_p1 == "attack1":
+            print("Player 1 withdrew,", active, ", Go,", t1mon6)
+        
+        
+        if move_p2 == "switch2":
+            active2, t2mon2 == t2mon2, active2
+            print("Player 2 withdrew,", active2, ", Go,", t2mon2)
+        elif move_p2 == "switch3":
+            active2, t2mon3 == t2mon3, active2
+            print("Player 2 withdrew,", active2, ", Go,", t2mon3)
+        elif move_p2 == "switch4":
+            active2, t2mon4 == t2mon4, active2
+            print("Player 2 withdrew,", active2, ", Go,", t2mon4)
+        elif move_p2 == "switch5":
+            active2, t2mon5 == t2mon5, active2
+            print("Player 2 withdrew,", active2, ", Go,", t2mon5)
+        elif move_p2 == "switch6":
+            active2, t2mon6 == t2mon6, active2
+            print("Player 2 withdrew,", active2, ", Go,", t2mon6)
+        
+        
+        if move_p1 == "attack1":
             if active_move1["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
                 active2_hp_stats -= calculation
@@ -2142,9 +2161,94 @@ while t1_points != 6 and t2_points != 6:
                 print(active2_hp_stats)
             else:
                 print("somethings silly")
-
-
-    
+        elif move_p1 == "attack2":
+            if active_move2["dmg_type"] == "physical":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move2)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move2["dmg_type"] == "special":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move2)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move2["dmg_type"] == "status":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
+                active2_hp_stats -= calculation
+                print(active, "used", active_move2)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            else:
+                print("somethings silly")
+        elif move_p1 == "attack3":
+            if active_move3["dmg_type"] == "physical":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move3["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move3)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move3["dmg_type"] == "special":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move3["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move3)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move3["dmg_type"] == "status":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
+                active2_hp_stats -= calculation
+                print(active, "used", active_move1)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            else:
+                print("somethings silly")
+        elif move_p1 == "attack4":
+            if active_move4["dmg_type"] == "physical":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move4)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move4["dmg_type"] == "special":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move4["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
+                active2_hp_stats -= calculation
+                print(active, "used", active_move4)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            elif active_move4["dmg_type"] == "status":
+                calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move4["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
+                active2_hp_stats -= calculation
+                print(active, "used", active_move4)
+                print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                print(active2_hp_stats)
+            else:
+                print("somethings silly")
+        else:
+            print("silly billy")
+        
+        if active2_hp_stats >= 0:
+            if move_p2 == "attack1":
+                if active2_move1["dmg_type"] == "physical":
+                    calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move1["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective))
+                    active_hp_stats -= calculation
+                    print(active2, "used", active2_move1)
+                    print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
+                    print(active_hp_stat)
+                elif active2_move1["dmg_type"] == "special":
+                    calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move1["power"]*(float(active2_spa_stats)/float(active_spd_stats))/50.0)+2.0)*role*stab)*effective))
+                    active_hp_stats -= calculation
+                    print(active2, "used", active2_move1)
+                    print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
+                    print(active_hp_stats)
+                elif active2_move1["dmg_type"] == "status":
+                    calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move1["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
+                    active_hp_stats -= calculation
+                    print(active2, "used", active2_move1)
+                    print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
+                    print(active_hp_stats)
+                else:
+                    print("somethings silly")
 
 
         
