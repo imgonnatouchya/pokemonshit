@@ -571,7 +571,7 @@ moves = {"sludge bomb":
          "wish":
          {"power": 0, "dmg_type": "status", "move_type": "normal"},
          "calm mind":
-         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
+         {"power": 0, "dmg_type": "status", "move_type": "psychic"},
          "thunderbolt":
          {"power": 0, "dmg_type": "special", "move_type": "electric"},
          "volt switch":
@@ -585,7 +585,7 @@ moves = {"sludge bomb":
          "double edge":
          {"power": 120, "dmg_type": "physical", "move_type": "normal"},
          "agility":
-         {"power": 0, "dmg_type": "status", "move_type": "psycic"},
+         {"power": 0, "dmg_type": "status", "move_type": "psychic"},
          "tri attack":
          {"power": 0, "dmg_type": "special", "move_type": "normal"},
          "hydro pump":
@@ -621,7 +621,7 @@ moves = {"sludge bomb":
          "nasty plot":
          {"power": 0, "dmg_type": "status", "move_type": "dark"},
          "psystrike":
-         {"power": 120, "dmg_type": "special", "move_type": "psycic"},
+         {"power": 120, "dmg_type": "special", "move_type": "psychic"},
          }
 
            
@@ -2157,6 +2157,1392 @@ while t1_points != 6 and t2_points != 6:
                 stab = 1.5
             else:
                 stab = 1
+            
+
+            if active_move1["move_type"] == "grass":
+                if active2_type1 == "grass":
+                    effective/2
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective*2
+                elif active2_type1 == "electric":
+                    effective * 1
+                elif active2_type1 == "ice":
+                    effective * 1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective/2
+                elif active2_type1 == "ground":
+                    effective*2
+                elif active2_type1 == "flying":
+                    effective/2
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective/2
+                elif active2_type1 == "rock":
+                    effective*2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective/2
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+            
+            elif active_move1["move_type"] == "fire":
+                if active2_type1 == "grass":
+                    effective*2
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective/2
+                elif active2_type1 == "electric":
+                    effective * 1
+                elif active2_type1 == "ice":
+                    effective * 2
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective*1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*2
+                elif active2_type1 == "rock":
+                    effective/2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective/2
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective*2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "water":
+                if active2_type1 == "grass":
+                    effective/2
+                elif active2_type1 == "fire":
+                    effective*2
+                elif active2_type1 == "water":
+                    effective/2
+                elif active2_type1 == "electric":
+                    effective * 1
+                elif active2_type1 == "ice":
+                    effective * 1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective*2
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective/2
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective*1
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "electric":
+                if active2_type1 == "grass":
+                    effective/2
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*2
+                elif active2_type1 == "electric":
+                    effective/2
+                elif active2_type1 == "ice":
+                    effective * 1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective*0
+                elif active2_type1 == "flying":
+                    effective*2
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective/2
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective*1
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ice":
+                if active2_type1 == "grass":
+                    effective*2
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective/2
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective/2
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 2
+                elif active2_type1 == "flying":
+                    effective*2
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+            
+            elif active_move1["move_type"] == "fighting":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*2
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective/2
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective/2
+                elif active2_type1 == "psychic":
+                    effective/2
+                elif active2_type1 == "bug":
+                    effective/2
+                elif active2_type1 == "rock":
+                    effective*2
+                elif active2_type1 == "ghost":
+                    effective * 0
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 2
+                elif active2_type1 == "steel":
+                    effective*2
+                elif active2_type1 == "fairy":
+                    effective/2
+                elif active2_type1 == "normal":
+                    effective *2
+
+            elif active_move1["move_type"] == "poison":
+                if active2_type1 == "grass":
+                    effective*2
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective/2
+                elif active2_type1 == "ground":
+                    effective/2
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective/2
+                elif active2_type1 == "ghost":
+                    effective/2
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective*0
+                elif active2_type1 == "fairy":
+                    effective * 2
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ground":
+                if active2_type1 == "grass":
+                    effective/2
+                elif active2_type1 == "fire":
+                    effective*2
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*2
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*2
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*0
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective/2
+                elif active2_type1 == "rock":
+                    effective*2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective*2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "flying":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective/2
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 2
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*2
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*2
+                elif active2_type1 == "rock":
+                    effective/2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "psychic":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 2
+                elif active2_type1 == "poison":
+                    effective*2
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective/2
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 0
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "bug":
+                if active2_type1 == "grass":
+                    effective*2
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective/2
+                elif active2_type1 == "poison":
+                    effective/2
+                elif active2_type1 == "ground":
+                    effective*1
+                elif active2_type1 == "flying":
+                    effective/2
+                elif active2_type1 == "psychic":
+                    effective * 2
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective /2
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 2
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective /2
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "rock":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective /2
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective/2
+                elif active2_type1 == "flying":
+                    effective*2
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*2
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ghost":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 2
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 2
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective/2
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *0
+
+            elif active_move1["move_type"] == "dragon":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*2
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 0
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "dark":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective/2
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 2
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 2
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective /2
+                elif active2_type1 == "steel":
+                    effective*1
+                elif active2_type1 == "fairy":
+                    effective /2
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "steel":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective/2
+                elif active2_type1 == "electric":
+                    effective/2
+                elif active2_type1 == "ice":
+                    effective*2
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*2
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 2
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "fairy":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective/2
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 2
+                elif active2_type1 == "poison":
+                    effective/2
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective*1
+                elif active2_type1 == "ghost":
+                    effective * 1
+                elif active2_type1 == "dragon":
+                    effective*2
+                elif active2_type1 == "dark":
+                    effective * 2
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "normal":
+                if active2_type1 == "grass":
+                    effective*1
+                elif active2_type1 == "fire":
+                    effective*1
+                elif active2_type1 == "water":
+                    effective*1
+                elif active2_type1 == "electric":
+                    effective*1
+                elif active2_type1 == "ice":
+                    effective*1
+                elif active2_type1 == "fighting":
+                    effective * 1
+                elif active2_type1 == "poison":
+                    effective*1
+                elif active2_type1 == "ground":
+                    effective* 1
+                elif active2_type1 == "flying":
+                    effective*1
+                elif active2_type1 == "psychic":
+                    effective * 1
+                elif active2_type1 == "bug":
+                    effective*1
+                elif active2_type1 == "rock":
+                    effective/2
+                elif active2_type1 == "ghost":
+                    effective * 0
+                elif active2_type1 == "dragon":
+                    effective*1
+                elif active2_type1 == "dark":
+                    effective * 1
+                elif active2_type1 == "steel":
+                    effective/2
+                elif active2_type1 == "fairy":
+                    effective * 1
+                elif active2_type1 == "normal":
+                    effective *1
+
+            
+
+
+
+
+            
+            
+            
+            if active_move1["move_type"] == "grass":
+                if active2_type2 == "grass":
+                    effective/2
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective*2
+                elif active2_type2 == "electric":
+                    effective * 1
+                elif active2_type2 == "ice":
+                    effective * 1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective/2
+                elif active2_type2 == "ground":
+                    effective*2
+                elif active2_type2 == "flying":
+                    effective/2
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective/2
+                elif active2_type2 == "rock":
+                    effective*2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective/2
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+            
+            elif active_move1["move_type"] == "fire":
+                if active2_type2 == "grass":
+                    effective*2
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective/2
+                elif active2_type2 == "electric":
+                    effective * 1
+                elif active2_type2 == "ice":
+                    effective * 2
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective*1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*2
+                elif active2_type2 == "rock":
+                    effective/2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective/2
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective*2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "water":
+                if active2_type2 == "grass":
+                    effective/2
+                elif active2_type2 == "fire":
+                    effective*2
+                elif active2_type2 == "water":
+                    effective/2
+                elif active2_type2 == "electric":
+                    effective * 1
+                elif active2_type2 == "ice":
+                    effective * 1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective*2
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective/2
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective*1
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "electric":
+                if active2_type2 == "grass":
+                    effective/2
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*2
+                elif active2_type2 == "electric":
+                    effective/2
+                elif active2_type2 == "ice":
+                    effective * 1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective*0
+                elif active2_type2 == "flying":
+                    effective*2
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective/2
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective*1
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ice":
+                if active2_type2 == "grass":
+                    effective*2
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective/2
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective/2
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 2
+                elif active2_type2 == "flying":
+                    effective*2
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+            
+            elif active_move1["move_type"] == "fighting":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*2
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective/2
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective/2
+                elif active2_type2 == "psychic":
+                    effective/2
+                elif active2_type2 == "bug":
+                    effective/2
+                elif active2_type2 == "rock":
+                    effective*2
+                elif active2_type2 == "ghost":
+                    effective * 0
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 2
+                elif active2_type2 == "steel":
+                    effective*2
+                elif active2_type2 == "fairy":
+                    effective/2
+                elif active2_type2 == "normal":
+                    effective *2
+
+            elif active_move1["move_type"] == "poison":
+                if active2_type2 == "grass":
+                    effective*2
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective/2
+                elif active2_type2 == "ground":
+                    effective/2
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective/2
+                elif active2_type2 == "ghost":
+                    effective/2
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective*0
+                elif active2_type2 == "fairy":
+                    effective * 2
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ground":
+                if active2_type2 == "grass":
+                    effective/2
+                elif active2_type2 == "fire":
+                    effective*2
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*2
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*2
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*0
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective/2
+                elif active2_type2 == "rock":
+                    effective*2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective*2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "flying":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective/2
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 2
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*2
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*2
+                elif active2_type2 == "rock":
+                    effective/2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "psychic":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 2
+                elif active2_type2 == "poison":
+                    effective*2
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective/2
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 0
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "bug":
+                if active2_type2 == "grass":
+                    effective*2
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective/2
+                elif active2_type2 == "poison":
+                    effective/2
+                elif active2_type2 == "ground":
+                    effective*1
+                elif active2_type2 == "flying":
+                    effective/2
+                elif active2_type2 == "psychic":
+                    effective * 2
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective /2
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 2
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective /2
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "rock":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective /2
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective/2
+                elif active2_type2 == "flying":
+                    effective*2
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*2
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "ghost":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 2
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 2
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective/2
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *0
+
+            elif active_move1["move_type"] == "dragon":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*2
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 0
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "dark":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective/2
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 2
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 2
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective /2
+                elif active2_type2 == "steel":
+                    effective*1
+                elif active2_type2 == "fairy":
+                    effective /2
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "steel":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective/2
+                elif active2_type2 == "electric":
+                    effective/2
+                elif active2_type2 == "ice":
+                    effective*2
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*2
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 2
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "fairy":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective/2
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 2
+                elif active2_type2 == "poison":
+                    effective/2
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective*1
+                elif active2_type2 == "ghost":
+                    effective * 1
+                elif active2_type2 == "dragon":
+                    effective*2
+                elif active2_type2 == "dark":
+                    effective * 2
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+
+            elif active_move1["move_type"] == "normal":
+                if active2_type2 == "grass":
+                    effective*1
+                elif active2_type2 == "fire":
+                    effective*1
+                elif active2_type2 == "water":
+                    effective*1
+                elif active2_type2 == "electric":
+                    effective*1
+                elif active2_type2 == "ice":
+                    effective*1
+                elif active2_type2 == "fighting":
+                    effective * 1
+                elif active2_type2 == "poison":
+                    effective*1
+                elif active2_type2 == "ground":
+                    effective* 1
+                elif active2_type2 == "flying":
+                    effective*1
+                elif active2_type2 == "psychic":
+                    effective * 1
+                elif active2_type2 == "bug":
+                    effective*1
+                elif active2_type2 == "rock":
+                    effective/2
+                elif active2_type2 == "ghost":
+                    effective * 0
+                elif active2_type2 == "dragon":
+                    effective*1
+                elif active2_type2 == "dark":
+                    effective * 1
+                elif active2_type2 == "steel":
+                    effective/2
+                elif active2_type2 == "fairy":
+                    effective * 1
+                elif active2_type2 == "normal":
+                    effective *1
+            
+            
+            
+            
+            
+            
+            
+            
+            
             if active_move1["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
                 print(active, "used", active_move1)
