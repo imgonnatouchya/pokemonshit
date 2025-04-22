@@ -1454,7 +1454,7 @@ if active2 == pokemon_keys[9]:
     active2_spe = 60
     active2_type1 = "fairy"
     active2_type2 = "none"
-    active2_move1 = moves["monnblast"]
+    active2_move1 = moves["moonblast"]
     active2_move2 = moves["recover"]
     active2_move3 = moves["protect"]
     active2_move4 = moves["flamethrower"]
@@ -2160,8 +2160,8 @@ while t1_points != 6 and t2_points != 6:
             print("Player 1 withdrew,", active, ", Go,", t1mon6)
         
         if move_p2 == "switch2":
+            print("Player 2 withdrew,", t2mon2, ", Go,", active2)
             active2, t2mon2 == t2mon2, active2
-            print("Player 2 withdrew,", active2, ", Go,", t2mon2)
         elif move_p2 == "switch3":
             active2, t2mon3 == t2mon3, active2
             print("Player 2 withdrew,", active2, ", Go,", t2mon3)
@@ -3560,29 +3560,36 @@ while t1_points != 6 and t2_points != 6:
                 elif active2_type2 == "normal":
                     effective *1
             
-            
-            
-            
-            
-            
-            
+        
             
             
             if active_move1["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
-                print(active, "used", active_move1)
+                print(active, "used", active_read[m1])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
                 active2_hp_stats -= calculation
             elif active_move1["dmg_type"] == "special":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
-                print(active, "used", active_move1)
+                print(active, "used", active_read[m1])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move1["dmg_type"] == "status":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
-                print(active, "used", active_move1)
+                print(active, "used", active_read[m1])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             else:
                 print("somethings silly")
         elif move_p1 == "attack2":
@@ -4972,21 +4979,33 @@ while t1_points != 6 and t2_points != 6:
             
             if active_move2["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
-                print(active, "used", active_move2)
+                print(active, "used", active_read[m2])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move2["dmg_type"] == "special":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
                 
-                print(active, "used", active_move2)
+                print(active, "used", active_read[m2])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move2["dmg_type"] == "status":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move2["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                 
-                print(active, "used", active_move2)
+                print(active, "used", active_read[m2])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             else:
                 print("somethings silly")
         elif move_p1 == "attack3":
@@ -6377,21 +6396,33 @@ while t1_points != 6 and t2_points != 6:
             if active_move3["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move3["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
                 
-                print(active, "used", active_move3)
+                print(active, "used", active_read[m3])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move3["dmg_type"] == "special":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move3["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
                 
-                print(active, "used", active_move3)
+                print(active, "used", active_read[m3])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move3["dmg_type"] == "status":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move3["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                 
-                print(active, "used", active_move3)
+                print(active, "used", active_read[m3])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             else:
                 print("somethings silly")
         elif move_p1 == "attack4":
@@ -7782,24 +7813,37 @@ while t1_points != 6 and t2_points != 6:
             if active_move4["dmg_type"] == "physical":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move1["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective))
                 
-                print(active, "used", active_move4)
+                print(active, "used", active_read[m4])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move4["dmg_type"] == "special":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move4["power"]*(float(active_spa_stats)/float(active2_spd_stats))/50.0)+2.0)*role*stab)*effective))
                 
-                print(active, "used", active_move4)
+                print(active, "used", active_read[m4])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             elif active_move4["dmg_type"] == "status":
                 calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active_move4["power"]*(float(active_atk_stats)/float(active2_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                 
-                print(active, "used", active_move4)
+                print(active, "used", active_read[m4])
                 print(active, "does,",(math.floor((calculation/active2_hp_stats)*100)), "% to,", active2)
                 active2_hp_stats -= calculation
+                if effective >= 2:
+                    print("Super Effective!")
+                elif effective <= 1:
+                    print("Not very Effective ")
             else:
                 print("somethings silly")
         
+        effective =1
         
         if active2_hp_stats >= 0:
             if move_p2 == "attack1":
@@ -7809,18 +7853,30 @@ while t1_points != 6 and t2_points != 6:
                     print(active2, "used", active2_move1)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move1["dmg_type"] == "special":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move1["power"]*(float(active2_spa_stats)/float(active_spd_stats))/50.0)+2.0)*role*stab)*effective))
                     
                     print(active2, "used", active2_move1)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move1["dmg_type"] == "status":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move1["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                     
                     print(active2, "used", active2_move1)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 else:
                     print("somethings silly")
             elif move_p2 == "attack2":
@@ -7830,18 +7886,30 @@ while t1_points != 6 and t2_points != 6:
                     print(active2, "used", active2_move2)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move2["dmg_type"] == "special":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move2["power"]*(float(active2_spa_stats)/float(active_spd_stats))/50.0)+2.0)*role*stab)*effective))
                     
                     print(active2, "used", active2_move2)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move2["dmg_type"] == "status":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move2["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                     
                     print(active2, "used", active_move2)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 else:
                     print("somethings silly")
             elif move_p2 == "attack3":
@@ -7851,18 +7919,30 @@ while t1_points != 6 and t2_points != 6:
                     print(active2, "used", active2_move3)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat*100)), "% to,", active))
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move3["dmg_type"] == "special":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move3["power"]*(float(active2_spa_stats)/float(active_spd_stats))/50.0)+2.0)*role*stab)*effective))
                     
                     print(active2, "used", active2_move3)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move3["dmg_type"] == "status":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move3["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                     
                     print(active2, "used", active2_move3)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 else:
                     print("somethings silly")
             elif move_p2 == "attack4":
@@ -7872,18 +7952,30 @@ while t1_points != 6 and t2_points != 6:
                     print(active2, "used", active2_move4)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move4["dmg_type"] == "special":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move4["power"]*(float(active2_spa_stats)/float(active_spd_stats))/50.0)+2.0)*role*stab)*effective))
                     
                     print(active2, "used", active2_move4)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active2)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 elif active2_move4["dmg_type"] == "status":
                     calculation = ((math.floor(math.floor(((((2.0*50.0)/5.0)+2.0)*active2_move4["power"]*(float(active2_atk_stats)/float(active_def_stats))/50.0)+2.0)*role*stab)*effective)*0)
                     
                     print(active2, "used", active2_move4)
                     print(active2, "does,",(math.floor((calculation/active_hp_stat)*100)), "% to,", active)
                     active_hp_stat -= calculation
+                    if effective >= 2:
+                        print("Super Effective!")
+                    elif effective <= 1:
+                        print("Not very Effective ")
                 else:
                     print("somethings silly")
             else:
@@ -8110,7 +8202,7 @@ while t1_points != 6 and t2_points != 6:
             else:
                 print("somethings silly")
         
-
+        effective =1 
         if active2_hp_stats >= 0:
             if move_p1 == "attack1":
                 if active_move1["dmg_type"] == "physical":
@@ -8275,6 +8367,7 @@ while t1_points != 6 and t2_points != 6:
     print(' ')
     print(' ')
     turn_num += 1
+    effective = 1
 
 
 
